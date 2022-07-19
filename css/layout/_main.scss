@@ -1,0 +1,43 @@
+.l-Main {
+    /*background-image: url(./../../img/GerberaPNG/Gerbera01-15.png), url(./../../img/GerberaPNG/g03-10.png), url(./../../img/GerberaPNG/g05-15.png), url(./../../img/GerberaPNG/g06-15.png), url(./../../img/GerberaPNG/g02-15.png);*/
+    /*background-color: rgba(255,255,255,0.1), rgba(255,255,255,0.1), rgba(255,255,255,0.1), rgba(255,255,255,0.1), rgba(255,255,255,0.1)*/
+    /*background-position: top center, right, center left, right center, bottom left;-*
+    /*background-size: contain;*/
+    /*background-blend-mode: lighten, lighten, lighten, lighten, lighten;*/
+    /*opacity: 0.1;*/
+    /*background-image: url(./../../img/GerberaPNG/g03.png);
+    background-color: rgba(255,255,255,0.1);
+    background-blend-mode: lighten;*/
+    margin: 0 auto 50px;
+    padding: 50px 20px 80px 20px;
+    @media screen and (min-width: 768px) {
+        padding: 0;
+    }
+    &::before {
+        content: "";
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        background: url(./../../img/GerberaPNG/SPVer.image.png);
+        background-size: cover;
+        @media screen and (min-width: 768px) {
+            background: url(./../../img/GerberaPNG/Tabver.png);
+        }
+        @media screen and (min-width: 960px) {
+            background: url(./../../img/GerberaPNG/PCver.png);
+        }
+    }
+    &-wrapper {
+        display: block;
+        @media screen and (min-width: 960px) {
+            width: 80%;
+            display: flex;
+            margin: 20px auto;
+            justify-content: center;
+        }
+    }
+}

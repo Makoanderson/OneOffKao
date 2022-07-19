@@ -1,0 +1,29 @@
+.l-sidebar {
+    /*width: calc(100%/2);*/
+    height: 300px;
+    /*display: block;*/
+    /*margin-top: -500px;*/
+    justify-content: space-around;
+    /*margin-left: 30px;*/
+    /*background-color: slategrey;*/
+    @media screen and (min-width: 960px) {
+        /*margin-right: auto;*/
+        width: 30%;
+        height: 300px;
+        /*display: flex;*/
+        text-align: left;
+        /*margin-top: -500px;*/
+        margin-left: 300px;
+        /*width: calc(100%/2);*/
+    }
+    /*&-menu {
+        @media screen and (min-width: 768px) {
+            margin: 0 auto;
+        }
+    }
+    &-list {
+        @media screen and (min-width: 768px) {
+            margin: 0 auto;
+        }
+    }*/
+}

@@ -1,0 +1,227 @@
+@use '../../foundation/color' as c;
+@use '../../foundation/font' as f;
+
+.p-blog {
+    /*background-color: #f00;*/
+    @media screen and (min-width: 960px) {
+        width: 50%;
+    }
+    &-mv {
+        margin: auto;
+        justify-content: center;
+        text-align: center;
+        /*background-color: aqua;*/
+        img {
+            width: 315px;
+            height: 220px;
+            margin: 25px auto;
+            @media screen and (min-width: 768px) {
+                width: 600px;
+                height: 500px;
+                /*margin: 100px 300px 100px 100px;*/
+                margin: 90px auto;
+                @media screen and (min-width: 768px) and (max-width: 960px) {
+                    margin: 90px;
+                }
+            }
+        }
+        p {
+            width: 330px;
+            height: 170px;
+            overflow-wrap: break-word;
+            /*margin-left: 20px;
+            margin-right: 20px;*/
+            margin: 25px auto;
+            @media screen and (min-width: 768px) {
+                width: 600px;
+                height: 250px;
+                /*margin-left: 100px;*/
+                /*margin-right: 360px;*/
+                @media screen and (min-width: 768px) and (max-width: 960px) {
+                    /*margin-left: 90px;*/
+                }
+            }
+        }
+    }
+    &-info {
+        /*margin: auto;
+        justify-content: center;
+        text-align: center;*/
+        /*background-color: antiquewhite;*/
+        p {
+            margin-left: 10%;
+        }
+    }
+    &-date {
+        // ...
+    }
+    &-cat {
+        // ...
+    }
+}
+
+.p-blog-side {
+    /*margin: 50px auto;*/
+    display: flex;
+    /*background-color: blue;*/
+    @media screen and (min-width: 960px) {
+        margin-top: 360px;
+        display: block;
+    }
+    &__title {
+        /*position: relative;*/
+        margin-bottom: 25px;
+        /*background-color: blueviolet;*/
+        @media screen and (min-width: 960px) {
+            margin-left: -15%;
+            background-color: c.$lightbrown;
+            width: 170%;
+        }
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+           /* top: 1650px;*/
+            width: 150px;
+            /*left: -510px;
+            margin-left: 0;*/
+        }
+        h3 {
+            position: relative;
+            font-size: 16px;
+            color: c.$darkbrown;
+            span {
+                display: inline-block;
+                margin: 10px;
+                background-color: rgba(251,242,247,0.6);
+                position: relative;
+                z-index: 160;
+                @media screen and (min-width: 960px) {
+                    background-color: transparent;
+                }
+            }
+        }
+        span::after{
+            content: "";
+            background-image: url("./../../img/GerberaPNG/g03sp.png");
+            background-size: 84px 75px;
+            opacity: 0.5;
+            width: 84px;
+            height: 75px;
+            left: -30px;
+            top: -15px;
+            position: absolute;
+            display: flex;
+            z-index: -5;
+            margin: -10px -20px;
+            @media screen and (min-width: 960px) {
+                display: none;
+            }
+        }
+        span::before {
+            content: "";
+            background-image: url("./../../img/GerberaPNG/g02sp.png");
+            background-size: 54px 52px;
+            opacity: 0.5;
+            width: 54px;
+            height: 52px;
+            left: -15px;
+            top: 5px;
+            position: absolute;
+            z-index: -1;
+            @media screen and (min-width: 960px) {
+                display: none;
+            }
+        }
+    }
+    &__archivemenu {
+        list-style-image: url("./../../img/GerberaPNG/g06list.png");
+        line-height: 24px;
+        /*background-color: chartreuse;*/
+        @media screen and (min-width: 960px) {
+            list-style: "－";
+        }
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            /*position: absolute;
+            top: 1350px;
+            left: 100px;*/
+        }
+    }
+    &__archivetitle {
+        /*margin-left: -15%;*/
+        margin-bottom: 25px;
+        /*background-color: crimson;*/
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            /*position: relative;
+            top: 1650px;*/
+            width: 200px;
+            /*left: -300px;*/
+            margin-left: 0;
+        }
+        h3 {
+            position: relative;
+            font-size: 16px;
+            color: c.$darkbrown;
+            span {
+                display: inline-block;
+                margin: 10px;
+                background-color: rgba(251,242,247,0.6);
+                position: relative;
+                z-index: 160;
+                @media screen and (min-width: 960px) {
+                    background-color: transparent;
+                }
+            }
+        }
+        span::after{
+            content: "";
+            background-image: url("./../../img/GerberaPNG/g03sp.png");
+            background-size: 84px 75px;
+            opacity: 0.5;
+            width: 84px;
+            height: 75px;
+            left: -30px;
+            top: -15px;
+            position: absolute;
+            display: flex;
+            z-index: -5;
+            margin: -10px -20px;
+            @media screen and (min-width: 960px) {
+                display: none;
+            }
+        }
+        span::before {
+            content: "";
+            background-image: url("./../../img/GerberaPNG/g02sp.png");
+            background-size: 54px 52px;
+            opacity: 0.5;
+            width: 54px;
+            height: 52px;
+            left: -15px;
+            top: 5px;
+            position: absolute;
+            z-index: -1;
+            @media screen and (min-width: 960px) {
+                display: none;
+            }
+        }
+        @media screen and (min-width: 960px) {
+            margin-top: 70px;
+            background-color: c.$lightbrown;
+            width: 170%;
+            }
+    }
+    &__list {
+        list-style-image: url("./../../img/GerberaPNG/g06list.png");
+        /*list-style-position: inside;*/
+        /*width: 16px;
+        height: 16px;*/
+        line-height: 24px;
+        /*background-color: darkgreen;*/
+        @media screen and (min-width: 960px) {
+            list-style: "－";
+        }
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            /*position: absolute;
+            top: 1350px;
+            left: 400px;*/
+        }
+    }
+}

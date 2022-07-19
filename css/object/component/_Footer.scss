@@ -1,0 +1,110 @@
+@use '../../foundation/color' as c;
+@use '../../foundation/font' as f;
+
+
+.c-Footer {
+    /*position: relative;*/
+    color: c.$midbronw;
+    background-color: c.$lightbrown;
+    padding: 20px 0;
+    &__logo {
+        /*position: absolute;*/
+        width: 100%;
+        margin: 0 auto 20px;
+        text-align: center;
+        /*height: 20px;*/
+        @media screen and (min-width:768px) {
+            width: 100%;
+            margin: 80px auto 65px;
+            text-align: center;
+        }
+        img {
+            height: 54px;
+            width: 80px;
+            @media screen and (min-width:768px) {
+                height: 160px;
+                width: 240px;
+            }
+        }
+    }
+    &__icon {
+        /*position: absolute;*/
+        width: 100%;
+        margin: 0 auto;
+        /*justify-content: center;*/
+        text-align: center;
+        @media screen and (min-width:768px) {
+            width: 100%;
+            margin: 0 auto 100px;
+            text-align: center;
+        }
+        i {
+            height: 16px;
+            width: 16px;
+            @media screen and (min-width:768px) {
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+    &__nav {
+        width: 100%;
+        margin: 0 auto;
+        /*display: flex;
+        justify-content: center;
+        flex-wrap: wrap;*/
+        @media screen and (min-width:768px) {
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__menu {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            /*height: 60px;*/
+            /*width: 80px;*/
+            @media screen and (min-width: 375px) {
+                display: flex;
+                /*flex-wrap: warp;*/
+                /*justify-content: center;*/
+            }
+            li {
+            /*display: flex;*/
+            padding: 0;
+            margin: 6px 0;
+            list-style: none;
+            border-left: 1px solid c.$midbronw;
+            justify-content: center;
+            /*flex-wrap: wrap;*/
+            align-items: center;
+            text-align: center;
+            width:calc(100%/3);
+            @media screen and (min-width: 768px) {
+                width: calc(100%/5)
+            }
+            a {
+                width: 80px;
+                @media screen and (min-width: 768px) {
+                    font-size: 24px;
+                }
+            }
+            }
+        }
+    }
+}
+
+/*.c-Footer img {
+    height: 54px;
+    width: 80px;
+}
+
+.c-Footer i {
+    height: 16px;
+    width: 16px;
+}*/
+
+.c-Footer__nav__menu li {
+    border-right: 1px solid c.$midbronw;
+    border-left: 1px solid c.$midbronw;
+    box-sizing: border-box;
+}

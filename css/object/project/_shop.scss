@@ -1,0 +1,81 @@
+@use '../../foundation/color' as c;
+@use '../../foundation/font' as f;
+
+.p-shop {
+    display: flex;
+    justify-content: space-around;
+    &-img {
+        margin-bottom: 40px;
+        margin-right: 12px;
+        @media screen and (min-width: 768px) {
+            margin-bottom: 100px;
+            margin-left: 50px;
+        }
+        @media screen and (min-width: 960px) {
+            /*margin-bottom: 100px;*/
+            margin-left: 220px;
+        }
+        img{
+        width: 130px;
+        height: 125px;
+        @media screen and (min-width: 768px) {
+            width: 300px;
+            height: 300px;
+        }
+        @media screen and (min-width: 960px) {
+            width: 400px;
+            height: 400px;
+        }
+        }
+    }
+    &-text {
+        display: flex;
+        width: 188px;
+        margin-bottom: 40px;
+        @media screen and(min-width: 768px) {
+            width: 600px;
+            margin-left: 50px;
+        }
+        @media screen and (min-width: 960px) {
+            /*width: 600px;*/
+            margin-left: 150px;
+        }
+        h3 {
+            overflow-wrap: break-word;
+        }
+        p {
+            margin: 0;
+            padding: 0;
+            overflow-wrap: break-word;
+        }
+    }
+}
+
+.p-shop-infobox {
+    /*padding: 0.5em 1em;*/
+    margin: 12px 20px 30px 20px;
+    border: 1px solid c.$darkbrown;
+    border-radius: 6px;
+    background-color: #fff;
+    width: 90%;
+    height: 80px;
+    /*text-align: center;*/
+    @media screen and (min-width: 768px) {
+        width: 60%;
+        height: 80px;
+        margin: 0 auto 100px;
+    }
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.p-shop-infoboxtitle {
+    margin: 40px auto 10px;
+    width: 90%;
+    @media screen and (min-width: 768px) {
+        margin: 90px auto 10px;
+        width: 60%;
+    }
+}
