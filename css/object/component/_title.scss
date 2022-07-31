@@ -518,7 +518,7 @@
             z-index: -5;
             margin: -10px -20px;
         }
-        h2:after {
+        span::before {
             content: "";
             background-image: url("./../../img/GerberaPNG/g02sp.png");
             background-size: 54px 52px;
