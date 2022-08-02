@@ -28,7 +28,7 @@
                                     <a href="index.html">Home</a>
                                 </li>
                                 <li>
-                                    <a href="about.html">About</a>
+                                    <a href="page-about.php">About</a>
                                 </li>
                                 <li>
                                     <a href="archive.html">Blog</a>
