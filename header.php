@@ -2,12 +2,12 @@
 <html <?php language_attributes(); ?>>
     <head>
         <mate charset="<?php bloginfo( 'charset' );?>">
-            <title>One-Off KAO</title>
+            <!-- <title>One-Off KAO</title> -->
             <meta name="description" content="<?php bloginfo( 'description' ); ?>">
     <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
-        <link rel="stylesheet" href="<?php echo esc_url( get_template_directory_uri() );?>/css/style.css/style.css">
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">-->
+        <!--<link rel="stylesheet" href="/css/style.css/style.css">-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
         <?php wp_head(); ?>
     </head>
