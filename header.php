@@ -21,7 +21,7 @@
                     </a>
                 </div>
                 <div class="l-f-Header__link">
-                    <div class="c-Nav">
+                    <!--<div class="c-Nav">
                         <nav class="c-Nav__body">
                             <ul id="menu-global-navi" class="c-Nav__body__menu">
                                 <li>
@@ -67,6 +67,7 @@
                             <i class="fa-brands fa-facebook-square"></i>
                             <i class="fa-brands fa-instagram"></i>
                         </div>
-                    </div>
+                    </div>-->
+                    <?php wp_nav_menu(); ?>
                 </div>
             </header>

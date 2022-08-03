@@ -20,3 +20,17 @@ function OneOffKao_enqueue_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
 ?>
+
+<?php
+    add_theme_support( 'menus' );
+
+    function OneOffKao_title( $title){
+        if(is_front_page()&&is_home()){
+            $title=get_bloginfo('name', 'dispaly');
+        }elseif(is_singular()){
+            $tile=single_post_title(",false");
+        }
+        return $title;
+        }
+        add_filter('pre_get_document_title', 'OneOffKao_title');
+?>
