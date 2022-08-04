@@ -1,14 +1,14 @@
 @use '../../foundation/color' as c;
 @use '../../foundation/font' as f;
 
-.c-Nav {
+.menu-headermenu-container {
     /*background-color: c.$lightbrown;*/
     width: 100%;
     @media screen and (min-width: 768px) {
         width: 100%;
         display: flex;
     }
-    &__body {
+    .menu {
         width: 100%;
         @media screen and (min-width: 768px) {
             width: 100%;
@@ -19,7 +19,7 @@
             /*display: flex;
             flex-wrap: wrap;*/
         }
-        &__menu {
+        &-item {
             color: c.$darkbrown;
             display: flex;
             display: none;
@@ -51,7 +51,7 @@
                 }
             }
         }
-        &__spmenu {
+        &-type-post_type {
             color: c.$darkbrown;
             display: block;
             display: flex;

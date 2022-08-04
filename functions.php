@@ -22,7 +22,16 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
 ?>
 
 <?php
-    add_theme_support( 'menus' );
+    register_nav_menu( $location, $description );
+
+    function twpp_setup_theme() {
+        register_nav_menus( array(
+            'header-navigation'=> 'Header Navigation',
+            'footer-navigation'=> 'Footer Navigation',
+            'social-links' => 'Social Links',
+        ) );
+    }
+    add_action( 'after_setup_theme', 'twpp_setup_theme' );
 
     function OneOffKao_title( $title){
         if(is_front_page()&&is_home()){

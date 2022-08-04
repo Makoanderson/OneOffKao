@@ -414,17 +414,17 @@ button {
   box-sizing: border-box;
 }
 
-.c-Nav {
+.menu-headermenu-container {
   /*background-color: c.$lightbrown;*/
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .c-Nav {
+  .menu-headermenu-container {
     width: 100%;
     display: flex;
   }
 }
-.c-Nav__body {
+.menu-headermenu-container .menu {
   width: 100%;
   /*ul li {
       width: 78px;
@@ -432,24 +432,24 @@ button {
   }*/
 }
 @media screen and (min-width: 768px) {
-  .c-Nav__body {
+  .menu-headermenu-container .menu {
     width: 100%;
   }
 }
-.c-Nav__body ul {
+.menu-headermenu-container .menu ul {
   list-style: none;
   width: 100%;
   /*display: flex;
   flex-wrap: wrap;*/
 }
-.c-Nav__body__menu {
+.menu-headermenu-container .menu-item {
   color: #2c1806;
   display: flex;
   display: none;
   flex-wrap: wrap;
 }
 @media screen and (min-width: 768px) {
-  .c-Nav__body__menu {
+  .menu-headermenu-container .menu-item {
     display: block;
     width: 100%;
     display: flex;
@@ -458,36 +458,36 @@ button {
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1110px) {
-  .c-Nav__body__menu {
+  .menu-headermenu-container .menu-item {
     display: block;
     width: 100%;
     display: flex;
     font-size: 16px;
   }
 }
-.c-Nav__body__menu li {
+.menu-headermenu-container .menu-item li {
   border-left: 1px solid #58310d;
   margin: 45px 0;
 }
-.c-Nav__body__menu li a {
+.menu-headermenu-container .menu-item li a {
   margin: 45px 40px;
   text-align: center;
   align-items: center;
   justify-content: center;
 }
 @media screen and (min-width: 768px) and (max-width: 960px) {
-  .c-Nav__body__menu li a {
+  .menu-headermenu-container .menu-item li a {
     margin: 45px 20px;
   }
 }
-.c-Nav__body__spmenu {
+.menu-headermenu-container .menu-type-post_type {
   color: #2c1806;
   display: block;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
 }
-.c-Nav__body__spmenu li {
+.menu-headermenu-container .menu-type-post_type li {
   width: 30.6666666667%;
   height: 46px;
   flex-wrap: wrap;
@@ -496,7 +496,7 @@ button {
   /*padding: 2.5px;*/
   margin: 2.5px;
 }
-.c-Nav__body__spmenu li a {
+.menu-headermenu-container .menu-type-post_type li a {
   display: block;
   justify-content: center;
   align-items: center;
@@ -504,11 +504,11 @@ button {
   /*flex-wrap: wrap;*/
 }
 @media screen and (min-width: 768px) {
-  .c-Nav__body__spmenu {
+  .menu-headermenu-container .menu-type-post_type {
     display: none;
   }
 }
-.c-Nav__icon {
+.menu-headermenu-container__icon {
   color: #2c1806;
   height: 20px;
   width: 20px;
@@ -518,27 +518,27 @@ button {
   text-align: center;
 }
 @media screen and (min-width: 768px) {
-  .c-Nav__icon {
+  .menu-headermenu-container__icon {
     display: block;
     display: flex;
     width: 60px;
     margin: auto 60px;
     justify-content: space-between;
   }
-  .c-Nav__icon i {
+  .menu-headermenu-container__icon i {
     width: 24px;
     height: 24px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 960px) {
-  .c-Nav__icon {
+  .menu-headermenu-container__icon {
     display: block;
     display: flex;
     width: 60px;
     margin: 45px 10px;
     justify-content: space-between;
   }
-  .c-Nav__icon i {
+  .menu-headermenu-container__icon i {
     width: 24px;
     height: 24px;
   }
@@ -1107,7 +1107,7 @@ button {
   z-index: -5;
   margin: -10px -20px;
 }
-.c-title-inquiry h2:after {
+.c-title-inquiry span::before {
   content: "";
   background-image: url("./../../img/GerberaPNG/g02sp.png");
   background-size: 54px 52px;
