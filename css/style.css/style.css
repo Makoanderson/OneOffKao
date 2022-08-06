@@ -451,7 +451,7 @@ button {
     width: 100%;
     display: flex;
     font-size: 24px;
-    padding: 45px;
+    padding: 45px 0;
     /*border-left: 1px solid c.$midbronw;*/
   }
 }
