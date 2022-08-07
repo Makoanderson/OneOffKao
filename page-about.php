@@ -81,7 +81,7 @@
                 <div class="c-title-about-img">
                     <img src="../img/Header.jpg">
                 </div>
-                <?php the_content(); ?>
+                <?php the_post_thumbnail(); ?>
                 <!--<div class="p-about">
                     <div class="p-about-name">
                         <h3>プロフィール</h3>

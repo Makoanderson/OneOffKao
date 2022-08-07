@@ -20,6 +20,7 @@
                         <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/One-Off logo black[708].png" alt="<?php bloginfo( 'name' ); ?>">
                     </a>
                 </div>
+                <article class="c-Nav">
                 <div class="l-f-Header__link">
                     <!--<div class="c-Nav">
                         <nav class="c-Nav__body">
@@ -63,11 +64,12 @@
                                 </li>
                             </ul>
                         </nav>
+                        </div>-->
                         <div class="c-Nav__icon">
                             <i class="fa-brands fa-facebook-square"></i>
                             <i class="fa-brands fa-instagram"></i>
                         </div>
-                    </div>-->
                     <?php wp_nav_menu(); ?>
+                </article>
                 </div>
             </header>

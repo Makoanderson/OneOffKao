@@ -1,6 +1,8 @@
     <?php get_header();?>   
             <main class="l-Main p-front c-title">
                 <section class="p-front-info">
+                <?php if(have_posts()):while(have_posts()):the_post();?>
+                <article>
                     <div class="c-title-info">
                         <!--<img class="c-title-info__img1" src="../img/GerberaPNG/g02.png">
                         <img class="c-title-info__img2" src="../img/GerberaPNG/g03.png"> -->
@@ -11,15 +13,19 @@
                             <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/sakura-series.jpg">
                             <p class="info-title"><a href="#">テキストテキストテキスト</a></p>
                         </div>
-                        <div class="p-front-info1__title">
-                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/sakura-series.jpg">
+                        <!--<div class="p-front-info1__title">
+                            <img src="/img/sakura-series.jpg">
                             <p class="info-title"><a href="#">テキストテキストテキスト</a></p>
                         </div>
                         <div class="p-front-info1__title">
-                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/sakura-series.jpg" class="info-img1">
+                            <img src="/img/sakura-series.jpg" class="info-img1">
                             <p class="info-title info-title-sp"><a href="#">テキストテキストテキスト</a></p>
-                        </div>
+                        </div>-->
                     </div>
+                    </article>
+                    <?php endwhile; else:?>
+                        <p>記事はありません。</p>
+                    <?php endif;?>
                 </section>
                 <section class="p-front-about">
                     <div class="c-title-about">
