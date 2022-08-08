@@ -13,7 +13,7 @@ function OneOffKao_enqueue_scripts() {
     wp_enqueue_style(
         'OneOffKao-theme-styles',
             get_template_directory_uri() . 
-            '/css/style.css/style.css',
+            '/css/styles.css/style.css',
             array(),
             '1.0.0'
     );
