@@ -112,69 +112,51 @@
                 </div>
             </header>-->
             <main class="l-Main">
-                <div class="c-title">
-                    <div class="c-title-blog">
-                    <!--<img class="c-title-blog__img1" src="../img/GerberaPNG/g02.png">
-                    <img class="c-title-blog__img2" src="../img/GerberaPNG/g03.png">-->
-                    <h2><span>Blog</span></h2>
+                <div class="l-Main-wrapper">
+                  <article class="p-blog">
+                    <header class="p-blog-info c-title">
+                        <div class="c-title-blogtitle">
+                            <!--<img class="c-title-blogtitle__img1" src="../img/GerberaPNG/g02.png">
+                            <img class="c-title-blogtitle__img2" src="../img/GerberaPNG/g03.png">-->
+                            <h2><span>お店のお知らせです。</span></h2>
+                        </div>
+                        <p class="p-blog-date">4/7<span>2022</span></p>
+                        <p class="p-blog-cat">カテゴリー:お店の紹介</p>
+                    </header>
+                    <div class="p-blog-mv">
+                        <img src="../img/sakura-series.jpg" alt="新作商品">
+                        <p>テキストテキストテキストテキストテキストテキストテキストテキスト
+                        テキストテキストテキストテキストテキストテキストテキストテキスト
+                        </p>
                     </div>
-                </div>
-                <section class="p-archive">
-                    <div class="p-archive-main">
-                        <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
+                  </article>
+                  <aside class="l-sidebar p-blog-side">
+                    <div class="l-sidebar-menu">
+                        <div class="p-blog-side__title">
+                            <!--<img src="../img/GerberaPNG/g02.png">
+                            <img src="../img/GerberaPNG/g03.png">-->
+                            <h3><span>カテゴリー</span></h3>
                         </div>
-                        <div class="p-archive-main-text">
-                            <a href="blog.html">
-                                <h3>タイトル</h3>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            </a>
-                        </div>
+                        <ul class="p-blog-side__archivemenu">
+                            <li><a href="#">新着情報</a></li>
+                            <li><a href="#">お知らせ</a></li>
+                            <li><a href="#">イヤリング</a></li>
+                            <li><a href="#">ネックレス</a></li>
+                        </ul>
                     </div>
-                    <div class="p-archive-main">
-                        <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
+                    <div class="l-sidebar-list">
+                        <div class="p-blog-side__archivetitle">
+                            <!--<img src="../img/GerberaPNG/g02.png">
+                            <img src="../img/GerberaPNG/g03.png">-->
+                            <h3><span>月別アーカイブ</span></h3>
                         </div>
-                        <div class="p-archive-main-text">
-                            <a href="blog.html">
-                                <h3>タイトル</h3>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            </a>
-                        </div>
+                        <ul class="p-blog-side__list">
+                            <li><a href="#">2022年4月 <span class="count">(1)</span></a></li>
+                            <li><a href="#">2022年3月 <span class="count">(14)</span></a></li>
+                            <li><a href="#">2022年2月 <span class="count">(1)</span></a></li>
+                        </ul>
                     </div>
-                    <div class="p-archive-main">
-                        <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
-                        </div>
-                        <div class="p-archive-main-text">
-                            <a href="blog.html">
-                                <h3>タイトル</h3>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="p-archive-main">
-                        <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
-                        </div>
-                        <div class="p-archive-main-text">
-                            <a href="blog.html">
-                                <h3>タイトル</h3>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <div class="p-archive-page">
-                    <ul class="p-archive-page-pagenation">
-                        <li><a href="#">＜</a></li>
-                        <li><a href="#">Prev</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">Next</a></li>
-                        <li><a href="#">＞</a></li>
-                    </ul>
+                  </aside>
                 </div>
             </main>
         <?php get_footer();?>    

@@ -1,4 +1,4 @@
-    <?php get_header();?>   
+<?php get_header();?>   
             <!--<main class="l-Main p-front c-title">
                 <section class="p-front-info">
                 
@@ -111,70 +111,50 @@
                     </div>
                 </div>
             </header>-->
-            <main class="l-Main">
-                <div class="c-title">
-                    <div class="c-title-blog">
-                    <!--<img class="c-title-blog__img1" src="../img/GerberaPNG/g02.png">
-                    <img class="c-title-blog__img2" src="../img/GerberaPNG/g03.png">-->
-                    <h2><span>Blog</span></h2>
+            <main class="l-Main c-title">
+                <div class="c-title-shop">
+                    <!--<img class="c-title-shop__img1" src="../img/GerberaPNG/g02.png">
+                    <img class="c-title-shop__img2" src="../img/GerberaPNG/g03.png">-->
+                    <h2><span>Shop一覧</span></h2>
+                </div>
+                <div class="p-shop-infoboxtitle">
+                    <p>お知らせ</p>
+                </div>
+                <div class="p-shop-infobox">
+                    <p>ここに全体のお知らせ</p>
+                </div>
+                <div class="p-shop">
+                    <div class="p-shop-img">
+                        <img src="../img/tulip.jpg">
+                    </div>
+                    <div class="p-shop-text">
+                        <a href="#">
+                            <h3>←BASEでお求めの方はこちらです。</h3>
+                            <p>お店ごとのお知らせ。</p>
+                        </a>
                     </div>
                 </div>
-                <section class="p-archive">
-                    <div class="p-archive-main">
-                        <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
-                        </div>
-                        <div class="p-archive-main-text">
-                            <a href="blog.html">
-                                <h3>タイトル</h3>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            </a>
-                        </div>
+                <div class="p-shop">
+                    <div class="p-shop-img">
+                        <img src="../img/tulip.jpg">
                     </div>
-                    <div class="p-archive-main">
-                        <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
-                        </div>
-                        <div class="p-archive-main-text">
-                            <a href="blog.html">
-                                <h3>タイトル</h3>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            </a>
-                        </div>
+                    <div class="p-shop-text">
+                        <a href="#">
+                            <h3>←minneでお求めの方はこちらです。</h3>
+                            <p>お店ごとのお知らせ。</p>
+                        </a>
                     </div>
-                    <div class="p-archive-main">
-                        <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
-                        </div>
-                        <div class="p-archive-main-text">
-                            <a href="blog.html">
-                                <h3>タイトル</h3>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            </a>
-                        </div>
+                </div>
+                <div class="p-shop">
+                    <div class="p-shop-img">
+                        <img src="../img/tulip.jpg">
                     </div>
-                    <div class="p-archive-main">
-                        <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
-                        </div>
-                        <div class="p-archive-main-text">
-                            <a href="blog.html">
-                                <h3>タイトル</h3>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            </a>
-                        </div>
+                    <div class="p-shop-text">
+                        <a href="#">
+                            <h3>←Creemaでお求めの方はこちらです。</h3>
+                            <p>お店ごとのお知らせ。</p>
+                        </a>
                     </div>
-                </section>
-                <div class="p-archive-page">
-                    <ul class="p-archive-page-pagenation">
-                        <li><a href="#">＜</a></li>
-                        <li><a href="#">Prev</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">Next</a></li>
-                        <li><a href="#">＞</a></li>
-                    </ul>
                 </div>
             </main>
         <?php get_footer();?>    
