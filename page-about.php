@@ -78,7 +78,7 @@
                     <h2><span><?php the_title(); ?><!--About--></span></h2>
                 </div>
                 <div class="c-title-about-img">
-                    <img src="img/Header.jpg">
+                    <img src="<?php echo esc_url( get_template_directory_uri() );?>img/Header.jpg">
                 </div>
                 <?php the_post_thumbnail(); ?>
                 <div class="p-about">
@@ -150,8 +150,8 @@
                     </div>
                 </div>
                 <div class="c-title-about-bot">
-                    <img id="img1" src="./img/blog2.jpg">
-                    <img id="img2" src="./img/blog3.jpg">
+                    <img id="img1" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog2.jpg">
+                    <img id="img2" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog3.jpg">
                 </div>
                 </article>
                 <?php endwhile; ?>

@@ -122,7 +122,7 @@
                 <section class="p-archive">
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
+                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
                         </div>
                         <div class="p-archive-main-text">
                             <a href="blog.html">
@@ -133,7 +133,7 @@
                     </div>
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
+                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
                         </div>
                         <div class="p-archive-main-text">
                             <a href="blog.html">
@@ -144,7 +144,7 @@
                     </div>
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
+                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
                         </div>
                         <div class="p-archive-main-text">
                             <a href="blog.html">
@@ -155,7 +155,7 @@
                     </div>
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
-                            <img src="../img/tulip.jpg">
+                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
                         </div>
                         <div class="p-archive-main-text">
                             <a href="blog.html">

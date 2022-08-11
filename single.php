@@ -124,7 +124,7 @@
                         <p class="p-blog-cat">カテゴリー:お店の紹介</p>
                     </header>
                     <div class="p-blog-mv">
-                        <img src="../img/sakura-series.jpg" alt="新作商品">
+                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/sakura-series.jpg" alt="新作商品">
                         <p>テキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキスト
                         </p>
