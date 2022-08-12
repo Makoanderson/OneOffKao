@@ -78,7 +78,7 @@
                     <h2><span><?php the_title(); ?><!--About--></span></h2>
                 </div>
                 <div class="c-title-about-img">
-                    <img src="<?php echo esc_url( get_template_directory_uri() );?>img/Header.jpg">
+                    <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/Header.jpg">
                 </div>
                 <?php the_post_thumbnail(); ?>
                 <div class="p-about">

@@ -78,7 +78,7 @@
                     <h2><span><?php the_ID(); ?><!--お問い合わせ--></span></h2>
                 </div>
                 <div class="p-inquiry-mv">
-                    <p class="inquiry-image"><img class="inquiry-img" src="../img/blog2.jpg"></p>
+                    <p class="inquiry-image"><img class="inquiry-img" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog2.jpg"></p>
                     <p class="inquiry-toi">お気軽にお問い合わせください。</p>
                 </div>
                 <form action="#" class="p-inquiry-form">
