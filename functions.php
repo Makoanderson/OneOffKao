@@ -23,6 +23,8 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
 
 <?php
     register_nav_menu( $location, $description );
+    register_nav_menu( 'menu-footer', 'フッターメニュー' );
+    register_nav_menu( 'menu-header', 'ヘッダーメニュー');
 
     function twpp_setup_theme() {
         register_nav_menus( array(
@@ -42,4 +44,15 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
         return $title;
         }
         add_filter('pre_get_document_title', 'OneOffKao_title');
+?>
+
+<?php
+function post_has_archive( $args, $post_type ) {
+  if ( 'post' == $post_type ) {
+    $args['rewrite'] = true;
+    $args['has_archive'] = 'blog-archive'; //URLとして使いたい文字列
+  }
+  return $args;
+}
+add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 ?>

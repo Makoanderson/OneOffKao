@@ -11,7 +11,7 @@
                     </div>
                 </div>
                 <div class="l-Foot__nav">
-                    <ul class="c-Footer__nav__menu">
+                    <!--<ul class="c-Footer__nav__menu">
                         <li>
                             <a href="index.html">Home</a>
                         </li>
@@ -27,8 +27,9 @@
                         <li>
                             <a href="inquiry.html">Contact</a>
                         </li>
-                    </ul>
+                    </ul>-->
                 </div>
+                <?php wp_nav_menu(); ?>
             </footer>
         </div>
         <?php wp_footer(); ?>

@@ -47,7 +47,7 @@
             }
         }
     }
-    &__nav {
+    .menu-footermenu-container {
         width: 100%;
         margin: 0 auto;
         /*display: flex;
@@ -57,7 +57,7 @@
             width: 100%;
             margin: 0 auto;
         }
-        &__menu {
+        .menu {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -103,7 +103,7 @@
     width: 16px;
 }*/
 
-.c-Footer__nav__menu li {
+#menu-footermenu-1 li {
     border-right: 1px solid c.$midbronw;
     border-left: 1px solid c.$midbronw;
     box-sizing: border-box;

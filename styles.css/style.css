@@ -347,7 +347,7 @@ button {
     width: 24px;
   }
 }
-.c-Footer__nav {
+.c-Footer .menu-footermenu-container {
   width: 100%;
   margin: 0 auto;
   /*display: flex;
@@ -355,12 +355,12 @@ button {
   flex-wrap: wrap;*/
 }
 @media screen and (min-width: 768px) {
-  .c-Footer__nav {
+  .c-Footer .menu-footermenu-container {
     width: 100%;
     margin: 0 auto;
   }
 }
-.c-Footer__nav__menu {
+.c-Footer .menu-footermenu-container .menu {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -368,13 +368,13 @@ button {
   /*width: 80px;*/
 }
 @media screen and (min-width: 375px) {
-  .c-Footer__nav__menu {
+  .c-Footer .menu-footermenu-container .menu {
     display: flex;
     /*flex-wrap: warp;*/
     /*justify-content: center;*/
   }
 }
-.c-Footer__nav__menu li {
+.c-Footer .menu-footermenu-container .menu li {
   /*display: flex;*/
   padding: 0;
   margin: 6px 0;
@@ -387,15 +387,15 @@ button {
   width: 33.3333333333%;
 }
 @media screen and (min-width: 768px) {
-  .c-Footer__nav__menu li {
+  .c-Footer .menu-footermenu-container .menu li {
     width: 20%;
   }
 }
-.c-Footer__nav__menu li a {
+.c-Footer .menu-footermenu-container .menu li a {
   width: 80px;
 }
 @media screen and (min-width: 768px) {
-  .c-Footer__nav__menu li a {
+  .c-Footer .menu-footermenu-container .menu li a {
     font-size: 24px;
   }
 }
@@ -409,7 +409,7 @@ button {
     height: 16px;
     width: 16px;
 }*/
-.c-Footer__nav__menu li {
+#menu-footermenu-1 li {
   border-right: 1px solid #58310d;
   border-left: 1px solid #58310d;
   box-sizing: border-box;
