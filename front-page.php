@@ -1,13 +1,13 @@
 <?php get_header();?>   
             <main class="l-Main p-front c-title">
                 <section class="p-front-info">
-                <?php if(have_posts()):while(have_posts()):the_post();?>
                 <article>
                     <div class="c-title-info">
                         <!--<img class="c-title-info__img1" src="../img/GerberaPNG/g02.png">
                         <img class="c-title-info__img2" src="../img/GerberaPNG/g03.png"> -->
                         <h2><span>新着情報</span></h2>
                     </div>
+                    <?php if(have_posts()):while(have_posts()):the_post();?>
                     <div class="p-front-info1">
                         <div class="p-front-info1__title">
                             <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/sakura-series.jpg">
