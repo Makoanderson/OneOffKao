@@ -23,8 +23,6 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
 
 <?php
     register_nav_menu( $location, $description );
-    register_nav_menu( 'menu-footer', 'フッターメニュー' );
-    register_nav_menu( 'menu-header', 'ヘッダーメニュー');
 
     function twpp_setup_theme() {
         register_nav_menus( array(
@@ -34,6 +32,16 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
         ) );
     }
     add_action( 'after_setup_theme', 'twpp_setup_theme' );
+
+    $headerNav = array (
+        'theme_location' => 'header-navigation',
+    );
+    wp_nav_menu( $headerNav );
+
+    $footerNav = array (
+        'theme_location' => 'footer-navigation',
+    );
+    wp_nav_menu( $footerNav );
 
     function OneOffKao_title( $title){
         if(is_front_page()&&is_home()){
