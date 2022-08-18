@@ -65,15 +65,15 @@
                             </ul>
                         </nav>-->
                         </div>
-                        <div class="c-Nav__icon">
-                            <i class="fa-brands fa-facebook-square"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
                     <?php 
                     $headerNav = array (
                         'theme_location' => 'header-navigation',
                     );
                     wp_nav_menu( $headerNav ); ?>
+                    <div class="c-Nav__icon">
+                            <i class="fa-brands fa-facebook-square"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
                 </article>
                 </div>
             </header>
