@@ -69,7 +69,11 @@
                             <i class="fa-brands fa-facebook-square"></i>
                             <i class="fa-brands fa-instagram"></i>
                         </div>
-                    <?php wp_nav_menu(); ?>
+                    <?php 
+                    $headerNav = array (
+                        'theme_location' => 'header-navigation',
+                    );
+                    wp_nav_menu( $headerNav ); ?>
                 </article>
                 </div>
             </header>

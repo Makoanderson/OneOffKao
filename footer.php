@@ -10,7 +10,7 @@
                         <i class="fa-brands fa-instagram"></i>
                     </div>
                 </div>
-                <div class="l-Foot__nav">
+                <div class="l-Foot__nav c-Footer__nav">
                     <!--<ul class="c-Footer__nav__menu">
                         <li>
                             <a href="index.html">Home</a>
@@ -29,7 +29,11 @@
                         </li>
                     </ul>-->
                 </div>
-                <?php wp_nav_menu(); ?>
+                <?php
+                $footerNav = array (
+                    'theme_location' => 'footer-navigation',
+                );
+                wp_nav_menu( $footerNav ); ?>
             </footer>
         </div>
         <?php wp_footer(); ?>

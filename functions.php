@@ -13,7 +13,7 @@ function OneOffKao_enqueue_scripts() {
     wp_enqueue_style(
         'OneOffKao-theme-styles',
             get_template_directory_uri() . 
-            '/css/styles.css/style.css',
+            '/styles.css/style.css',
             array(),
             '1.0.0'
     );
@@ -32,16 +32,10 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
         ) );
     }
     add_action( 'after_setup_theme', 'twpp_setup_theme' );
+    /*wp_nav_menu( $headerNav );*/
 
-    $headerNav = array (
-        'theme_location' => 'header-navigation',
-    );
-    wp_nav_menu( $headerNav );
-
-    $footerNav = array (
-        'theme_location' => 'footer-navigation',
-    );
-    wp_nav_menu( $footerNav );
+    
+    /*wp_nav_menu( $footerNav );*/
 
     function OneOffKao_title( $title){
         if(is_front_page()&&is_home()){

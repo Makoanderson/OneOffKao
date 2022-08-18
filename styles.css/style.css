@@ -57,6 +57,10 @@ button {
 .l-Foot {
   /*margin: 0 100px;*/
   /*padding: 0 100px;*/
+  /*&__nav {
+      display: block;
+      margin: 0 100px;
+  }*/
 }
 @media screen and (min-width: 960px) {
   .l-Foot {
@@ -73,18 +77,6 @@ button {
 }
 .l-Foot__icon {
   display: block;
-}
-.l-Foot__nav {
-  /*display: block;*/
-  /*margin: 0 100px;*/
-  width: 200px;
-  height: 60px;
-  margin: 25px auto;
-}
-@media screen and (min-width: 768px) {
-  .l-Foot__nav {
-    width: 60%;
-  }
 }
 
 .l-Header {
@@ -294,7 +286,7 @@ button {
 }
 
 .c-Footer {
-  /*position: relative;*/
+  position: relative;
   color: #58310d;
   background-color: #E1CCB0;
   padding: 20px 0;
@@ -347,17 +339,42 @@ button {
     width: 24px;
   }
 }
+.c-Footer__nav {
+  /*position: relative;*/
+  width: 200px;
+  height: 60px;
+  margin: 25px auto;
+  /*background-color: aqua;*/
+}
+@media screen and (min-width: 768px) {
+  .c-Footer__nav {
+    width: 60%;
+  }
+}
+.c-Footer #menu-footermenu li {
+  border-right: 1px solid #58310d;
+  border-left: 1px solid #58310d;
+  box-sizing: border-box;
+}
 .c-Footer .menu-footermenu-container {
-  width: 100%;
-  margin: 0 auto;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  height: 60px;
   /*display: flex;
   justify-content: center;
   flex-wrap: wrap;*/
 }
 @media screen and (min-width: 768px) {
   .c-Footer .menu-footermenu-container {
-    width: 100%;
-    margin: 0 auto;
+    width: 60%;
+    top: 440px;
+    /*width: 200px;*/
+    margin: 25px auto;
+    /*margin: 0 auto;*/
   }
 }
 .c-Footer .menu-footermenu-container .menu {
@@ -409,12 +426,6 @@ button {
     height: 16px;
     width: 16px;
 }*/
-#menu-footermenu-1 li {
-  border-right: 1px solid #58310d;
-  border-left: 1px solid #58310d;
-  box-sizing: border-box;
-}
-
 .c-Nav {
   display: flex;
   text-align: right;
@@ -602,7 +613,7 @@ button {
 }
 .c-title-shop span::after {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g03sp.png");
+  background-image: url("./../img/GerberaPNG/g03sp.png");
   background-size: 84px 75px;
   opacity: 0.5;
   width: 84px;
@@ -616,7 +627,7 @@ button {
 }
 .c-title-shop span::before {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g02sp.png");
+  background-image: url("./../img/GerberaPNG/g02sp.png");
   background-size: 54px 52px;
   opacity: 0.5;
   width: 54px;
@@ -672,7 +683,7 @@ button {
 }
 .c-title-info span::after {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g03sp.png");
+  background-image: url("./../img/GerberaPNG/g03sp.png");
   background-size: 84px 75px;
   opacity: 0.5;
   width: 84px;
@@ -686,7 +697,7 @@ button {
 }
 .c-title-info span::before {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g02sp.png");
+  background-image: url("./../img/GerberaPNG/g02sp.png");
   background-size: 54px 52px;
   opacity: 0.5;
   width: 54px;
@@ -744,7 +755,7 @@ button {
 }
 .c-title-about span::after {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g03sp.png");
+  background-image: url("./../img/GerberaPNG/g03sp.png");
   background-size: 84px 75px;
   opacity: 0.5;
   width: 84px;
@@ -758,7 +769,7 @@ button {
 }
 .c-title-about span::before {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g02sp.png");
+  background-image: url("./../img/GerberaPNG/g02sp.png");
   background-size: 54px 52px;
   opacity: 0.5;
   width: 54px;
@@ -927,7 +938,7 @@ button {
 }
 .c-title-blog span::after {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g03sp.png");
+  background-image: url("./../img/GerberaPNG/g03sp.png");
   background-size: 84px 75px;
   opacity: 0.5;
   width: 84px;
@@ -941,7 +952,7 @@ button {
 }
 .c-title-blog span::before {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g02sp.png");
+  background-image: url("./../img/GerberaPNG/g02sp.png");
   background-size: 54px 52px;
   opacity: 0.5;
   width: 54px;
@@ -1025,7 +1036,7 @@ button {
 }
 .c-title-blogtitle span::after {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g03sp.png");
+  background-image: url("./../img/GerberaPNG/g03sp.png");
   background-size: 84px 75px;
   opacity: 0.5;
   width: 84px;
@@ -1039,7 +1050,7 @@ button {
 }
 .c-title-blogtitle span::before {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g02sp.png");
+  background-image: url("./../img/GerberaPNG/g02sp.png");
   background-size: 54px 52px;
   opacity: 0.5;
   width: 54px;
@@ -1096,7 +1107,7 @@ button {
 }
 .c-title-inquiry span::after {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g03sp.png");
+  background-image: url("./../img/GerberaPNG/g03sp.png");
   background-size: 84px 75px;
   opacity: 0.5;
   width: 84px;
@@ -1110,7 +1121,7 @@ button {
 }
 .c-title-inquiry span::before {
   content: "";
-  background-image: url("./../../img/GerberaPNG/g02sp.png");
+  background-image: url("./../img/GerberaPNG/g02sp.png");
   background-size: 54px 52px;
   opacity: 0.5;
   width: 54px;
