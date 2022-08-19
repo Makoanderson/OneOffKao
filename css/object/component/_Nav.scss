@@ -8,7 +8,7 @@
     /*background-color: c.$lightbrown;*/
     width: 100%;
     @media screen and (min-width: 768px) {
-        width: 100%;
+        width: 250%;
         display: flex;
     }
     /* .menu {
@@ -55,32 +55,7 @@
                 }
             }
         }
-        .menu-item-type-post_type {
-            color: c.$darkbrown;
-            display: block;
-            display: flex;
-            flex-wrap: wrap;
-            list-style: none;
-            li {
-                width: calc(92%/3);
-                height: 46px;
-                flex-wrap: wrap;
-                justify-content: center;
-                background-color: c.$lightbrown;
-                /*padding: 2.5px;*/
-                margin: 2.5px;
-                a {
-                    display: block;
-                    justify-content: center;
-                    align-items: center;
-                    text-align: center;
-                    /*flex-wrap: wrap;*/
-                }
-            }
-            /*@media screen and (min-width:768px) {
-                display: none;
-            }*/
-        }
+        
         /*ul li {
             width: 78px;
             height: 46px;
@@ -117,4 +92,39 @@
             }
         }
     }
+.menu-spheader-container {
+    width: 100%;
+    @media screen and (min-width: 375px) {
+        width: 120%;
     }
+    @media screen and (min-width: 428px) {
+        width: 150%;
+    }
+    .menu {
+        color: c.$darkbrown;
+        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        li {
+            width: calc(92%/3);
+            height: 46px;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: c.$lightbrown;
+            /*padding: 2.5px;*/
+            margin: 2.5px;
+            a {
+                display: block;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                /*flex-wrap: wrap;*/
+            }
+        }
+        @media screen and (min-width:768px) {
+            display: none;
+        }
+    }
+    }
+}

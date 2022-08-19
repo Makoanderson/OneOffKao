@@ -69,7 +69,11 @@
                     $headerNav = array (
                         'theme_location' => 'header-navigation',
                     );
-                    wp_nav_menu( $headerNav ); ?>
+                    wp_nav_menu( $headerNav );
+                    $Spheader = array (
+                        'theme_location' => 'spheader'
+                    );
+                    wp_nav_menu( $Spheader ); ?>
                     <div class="c-Nav__icon">
                             <i class="fa-brands fa-facebook-square"></i>
                             <i class="fa-brands fa-instagram"></i>

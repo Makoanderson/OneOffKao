@@ -188,7 +188,7 @@ button {
 .l-f-Header__link {
   /*width: 100%;*/
   height: 50px;
-  width: 75%;
+  /*width: 75%;*/
   /*background-color: c.$lightbrown;*/
 }
 @media screen and (min-width: 768px) {
@@ -445,7 +445,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .c-Nav .menu-headermenu-container {
-    width: 100%;
+    width: 250%;
     display: flex;
   }
 }
@@ -494,32 +494,6 @@ button {
     margin: 45px 20px;
   }
 }
-.c-Nav .menu-headermenu-container .menu-item-type-post_type {
-  color: #2c1806;
-  display: block;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  /*@media screen and (min-width:768px) {
-      display: none;
-  }*/
-}
-.c-Nav .menu-headermenu-container .menu-item-type-post_type li {
-  width: 30.6666666667%;
-  height: 46px;
-  flex-wrap: wrap;
-  justify-content: center;
-  background-color: #E1CCB0;
-  /*padding: 2.5px;*/
-  margin: 2.5px;
-}
-.c-Nav .menu-headermenu-container .menu-item-type-post_type li a {
-  display: block;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  /*flex-wrap: wrap;*/
-}
 .c-Nav__icon {
   color: #2c1806;
   height: 20px;
@@ -553,6 +527,47 @@ button {
   .c-Nav__icon i {
     width: 24px;
     height: 24px;
+  }
+}
+.c-Nav .menu-spheader-container {
+  width: 100%;
+}
+@media screen and (min-width: 375px) {
+  .c-Nav .menu-spheader-container {
+    width: 120%;
+  }
+}
+@media screen and (min-width: 428px) {
+  .c-Nav .menu-spheader-container {
+    width: 150%;
+  }
+}
+.c-Nav .menu-spheader-container .menu {
+  color: #2c1806;
+  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+.c-Nav .menu-spheader-container .menu li {
+  width: 30.6666666667%;
+  height: 46px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #E1CCB0;
+  /*padding: 2.5px;*/
+  margin: 2.5px;
+}
+.c-Nav .menu-spheader-container .menu li a {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /*flex-wrap: wrap;*/
+}
+@media screen and (min-width: 768px) {
+  .c-Nav .menu-spheader-container .menu {
+    display: none;
   }
 }
 

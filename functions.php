@@ -28,7 +28,7 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
         register_nav_menus( array(
             'header-navigation'=> 'Header Navigation',
             'footer-navigation'=> 'Footer Navigation',
-            'social-links' => 'Social Links',
+            'spheader' => 'SP Header',
         ) );
     }
     add_action( 'after_setup_theme', 'twpp_setup_theme' );
