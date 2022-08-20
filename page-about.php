@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </header>-->
-            <?php get_header();?>
+            <?php get_header('other');?>
             <main class="l-Main c-title">
                 <?php if( have_posts()):
                     while( have_posts()):

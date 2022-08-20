@@ -14,14 +14,14 @@
     <body <?php body_class(); ?>>
     <?php wp_body_open(); ?>
         <div class="l-wrapper">
-            <header class="l-f-Header">
-                <div class="l-f-Header__title">
+            <header class="l-Header">
+                <div class="l-Header__title">
                     <a href="<?php echo esc_url( home_url() ); ?>">
                         <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/One-Off logo black[708].png" alt="<?php bloginfo( 'name' ); ?>">
                     </a>
                 </div>
                 <article class="c-Nav">
-                    <div class="l-f-Header__link">
+                    <div class="l-Header__link">
                     <div class="c-Nav">
                         <!--<nav class="c-Nav__body">
                             <ul id="menu-global-navi" class="c-Nav__body__menu">
@@ -66,15 +66,15 @@
                         </nav>-->
                         </div>
                     <?php 
-                    $headerNav = array (
-                        'theme_location' => 'header-navigation',
+                    $headerN = array (
+                        'theme_location' => 'header-navi',
                     );
-                    wp_nav_menu( $headerNav );
+                    wp_nav_menu( $headerN );
                     $Spheader = array (
                         'theme_location' => 'spheader'
                     );
                     wp_nav_menu( $Spheader ); ?>
-                    <div class="c-Nav__iconf">
+                    <div class="c-Nav__icon">
                             <i class="fa-brands fa-facebook-square"></i>
                             <i class="fa-brands fa-instagram"></i>
                         </div>

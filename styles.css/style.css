@@ -123,11 +123,12 @@ button {
 .l-Header__link {
   /*width: 100%;*/
   height: 50px;
-  width: 75%;
+  /*width: 75%;*/
 }
 @media screen and (min-width: 768px) {
   .l-Header__link {
     width: 100%;
+    display: flex;
   }
 }
 
@@ -445,7 +446,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .c-Nav .menu-headermenu-container {
-    width: 250%;
+    width: 300%;
     display: flex;
   }
 }
@@ -494,6 +495,41 @@ button {
     margin: 45px 20px;
   }
 }
+.c-Nav__iconf {
+  color: #2c1806;
+  height: 20px;
+  width: 20px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .c-Nav__iconf {
+    display: block;
+    display: flex;
+    width: 60px;
+    margin: auto 60px;
+    justify-content: space-between;
+  }
+  .c-Nav__iconf i {
+    width: 24px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .c-Nav__iconf {
+    display: block;
+    display: flex;
+    width: 60px;
+    margin: 45px 10px;
+    justify-content: space-between;
+  }
+  .c-Nav__iconf i {
+    width: 24px;
+    height: 24px;
+  }
+}
 .c-Nav__icon {
   color: #2c1806;
   height: 20px;
@@ -508,7 +544,7 @@ button {
     display: block;
     display: flex;
     width: 60px;
-    margin: auto 60px;
+    margin: 70px 60px;
     justify-content: space-between;
   }
   .c-Nav__icon i {
@@ -521,7 +557,7 @@ button {
     display: block;
     display: flex;
     width: 60px;
-    margin: 45px 10px;
+    margin: 63px 10px;
     justify-content: space-between;
   }
   .c-Nav__icon i {
@@ -540,6 +576,11 @@ button {
 @media screen and (min-width: 428px) {
   .c-Nav .menu-spheader-container {
     width: 150%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .c-Nav .menu-spheader-container {
+    width: 0;
   }
 }
 .c-Nav .menu-spheader-container .menu {
@@ -568,6 +609,70 @@ button {
 @media screen and (min-width: 768px) {
   .c-Nav .menu-spheader-container .menu {
     display: none;
+  }
+}
+.c-Nav .menu-headernavi-container {
+  /*background-color: c.$lightbrown;*/
+  width: 100%;
+  /* .menu {
+      width: 100%;
+      @media screen and (min-width: 768px) {
+          width: 100%;
+      }*/
+  /*ul li {
+      width: 78px;
+      height: 46px;
+  }*/
+}
+@media screen and (min-width: 768px) {
+  .c-Nav .menu-headernavi-container {
+    width: 300%;
+    display: flex;
+  }
+}
+.c-Nav .menu-headernavi-container ul {
+  list-style: none;
+  width: 100%;
+  /*display: flex;
+  flex-wrap: wrap;*/
+}
+.c-Nav .menu-headernavi-container .menu {
+  color: #2c1806;
+  display: flex;
+  display: none;
+  flex-wrap: wrap;
+}
+@media screen and (min-width: 768px) {
+  .c-Nav .menu-headernavi-container .menu {
+    display: block;
+    width: 100%;
+    display: flex;
+    font-size: 24px;
+    padding: 55px 0;
+    /*border-left: 1px solid c.$midbronw;*/
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1110px) {
+  .c-Nav .menu-headernavi-container .menu {
+    display: block;
+    width: 100%;
+    display: flex;
+    font-size: 16px;
+  }
+}
+.c-Nav .menu-headernavi-container .menu li {
+  border-left: 1px solid #58310d;
+  /*margin: 45px 0;*/
+}
+.c-Nav .menu-headernavi-container .menu li a {
+  margin: 0 40px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .c-Nav .menu-headernavi-container .menu li a {
+    margin: 45px 20px;
   }
 }
 

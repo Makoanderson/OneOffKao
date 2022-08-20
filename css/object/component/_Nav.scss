@@ -8,7 +8,7 @@
     /*background-color: c.$lightbrown;*/
     width: 100%;
     @media screen and (min-width: 768px) {
-        width: 250%;
+        width: 300%;
         display: flex;
     }
     /* .menu {
@@ -61,7 +61,7 @@
             height: 46px;
         }*/
     }
-    &__icon {
+    &__iconf {
         color: c.$darkbrown;
         height: 20px;
         width: 20px;
@@ -92,6 +92,37 @@
             }
         }
     }
+    &__icon {
+        color: c.$darkbrown;
+        height: 20px;
+        width: 20px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            display: block;
+            display: flex;
+            width: 60px;
+            margin: 70px 60px;
+            justify-content: space-between;
+            i {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            display: block;
+            display: flex;
+            width: 60px;
+            margin: 63px 10px;
+            justify-content: space-between;
+            i {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
 .menu-spheader-container {
     width: 100%;
     @media screen and (min-width: 375px) {
@@ -99,6 +130,9 @@
     }
     @media screen and (min-width: 428px) {
         width: 150%;
+    }
+    @media screen and (min-width: 768px) {
+        width: 0;
     }
     .menu {
         color: c.$darkbrown;
@@ -127,4 +161,62 @@
         }
     }
     }
+    .menu-headernavi-container {
+        /*background-color: c.$lightbrown;*/
+        width: 100%;
+        @media screen and (min-width: 768px) {
+            width: 300%;
+            display: flex;
+        }
+        /* .menu {
+            width: 100%;
+            @media screen and (min-width: 768px) {
+                width: 100%;
+            }*/
+            ul {
+                list-style: none;
+                width: 100%;
+                /*display: flex;
+                flex-wrap: wrap;*/
+            }
+            .menu {
+                color: c.$darkbrown;
+                display: flex;
+                display: none;
+                flex-wrap: wrap;
+                @media screen and (min-width:768px) {
+                    display: block;
+                    width: 100%;
+                    display: flex;
+                    font-size: 24px;
+                    padding:55px 0;
+                    /*border-left: 1px solid c.$midbronw;*/
+                }
+                @media screen and (min-width: 768px) and (max-width: 1110px) {
+                    display: block;
+                    width: 100%;
+                    display: flex;
+                    font-size: 16px;
+                }
+                li {
+                    border-left: 1px solid c.$midbronw;
+                    /*margin: 45px 0;*/
+                    a {
+                        margin: 0 40px;
+                        text-align: center;
+                        align-items: center;
+                        justify-content: center;
+                        @media screen and (min-width: 768px) and (max-width: 960px) {
+                            margin: 45px 20px;
+                        }
+                    }
+                }
+            }
+            
+            /*ul li {
+                width: 78px;
+                height: 46px;
+            }*/
+        }
+    
 }
