@@ -1,4 +1,4 @@
-<?php get_header2();?>   
+<?php get_header('other');?>   
             <!--<main class="l-Main p-front c-title">
                 <section class="p-front-info">
                 

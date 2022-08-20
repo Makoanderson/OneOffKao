@@ -75,7 +75,7 @@
                 <div class="c-title-inquiry">
                     <!--<img class="c-title-inquiry__img1" src="../img/GerberaPNG/g02.png">
                     <img class="c-title-inquiry__img2" src="../img/GerberaPNG/g03.png">-->
-                    <h2><span><?php the_ID(); ?><!--お問い合わせ--></span></h2>
+                    <h2><span>お問い合わせ</span></h2>
                 </div>
                 <div class="p-inquiry-mv">
                     <p class="inquiry-image"><img class="inquiry-img" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog2.jpg"></p>
