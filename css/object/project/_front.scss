@@ -4,14 +4,17 @@
         @media screen and (min-width: 768px) {
             margin: 55px 0 150px;
         }
+        article {
+            display: flex;
+        }
     }
     &-info1 {
-        display: flex;
+        /*display: flex;*/
         justify-content: space-around;
         margin: 25px auto 0;
         width: 80%;
         @media screen and (min-width: 768px) {
-            margin: 100px auto 0;
+            margin: 100px 100px 0;
         }
         &__title img {
             width: 144px;
