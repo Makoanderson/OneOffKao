@@ -64,3 +64,4 @@ add_filter( 'register_post_type_args', 'post_has_archive', 10, 2 );
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(200, 200);
 ?>
+

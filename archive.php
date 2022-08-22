@@ -120,9 +120,26 @@
                     </div>
                 </div>
                 <section class="p-archive">
+                    <?php if(have_posts()):while(have_posts()):the_post();?>
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
-                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
+                            <?php the_post_thumbnail(); ?>
+                            <!--<img src="/img/tulip.jpg">-->
+                        </div>
+                        <div class="p-archive-main-text">
+                            <h3>
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_title(); ?>
+                                <!--<p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>-->
+                                </a>
+                            </h3>
+                            <?php echo mb_substr(get_the_excerpt(), 0, 50);?>
+                                <a href="<?php the_permalink();?>">続きを読む→</a>
+                        </div>
+                    </div>
+                    <!--<div class="p-archive-main">
+                        <div class="p-archive-main-img">
+                            <img src="/img/tulip.jpg">
                         </div>
                         <div class="p-archive-main-text">
                             <a href="blog.html">
@@ -133,7 +150,7 @@
                     </div>
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
-                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
+                            <img src="/img/tulip.jpg">
                         </div>
                         <div class="p-archive-main-text">
                             <a href="blog.html">
@@ -144,7 +161,7 @@
                     </div>
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
-                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
+                            <img src="/img/tulip.jpg">
                         </div>
                         <div class="p-archive-main-text">
                             <a href="blog.html">
@@ -152,18 +169,10 @@
                                 <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
                             </a>
                         </div>
-                    </div>
-                    <div class="p-archive-main">
-                        <div class="p-archive-main-img">
-                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
-                        </div>
-                        <div class="p-archive-main-text">
-                            <a href="blog.html">
-                                <h3>タイトル</h3>
-                                <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
-                            </a>
-                        </div>
-                    </div>
+                    </div>-->
+                    <?php endwhile; else:?>
+                        <p>記事はありません。</p>
+                    <?php endif;?>
                 </section>
                 <div class="p-archive-page">
                     <ul class="p-archive-page-pagenation">
