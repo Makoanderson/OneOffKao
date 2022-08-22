@@ -81,7 +81,7 @@
                     <p class="inquiry-image"><img class="inquiry-img" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog2.jpg"></p>
                     <p class="inquiry-toi">お気軽にお問い合わせください。</p>
                 </div>
-                <form action="#" class="p-inquiry-form">
+                <!--<form action="#" class="p-inquiry-form">
                     <div>
                         <lable for="name">お名前</lable>
                         <input type="text" id="name" name="your-name">
@@ -99,7 +99,7 @@
                         <textarea id="message" name="your-message"></textarea>
                     </div>
                     <input type="submit" class="button" value="送信">
-                </form>
+                </form>-->
                 </article>
                 <?php endwhile; ?>
             <?php endif; ?>
