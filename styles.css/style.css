@@ -1406,23 +1406,29 @@ button {
   clear: both;
   align-items: center;
   margin: 70px auto 40px;
-  width: 60%;
+  width: 50%;
 }
-@madia screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .wp-pagenavi {
-    width: 35%;
+    width: 25%;
     align-items: center;
     margin: 0 auto 145px;
   }
 }
-
-.wp-pagenavi a .wp-pagenavi span {
+.wp-pagenavi a {
   text-decoration: none;
   padding: 3px 5px;
   margin: 2px;
 }
-
-.wp-pagenavi a:hover, .wp-pagenavi span, :current {
+.wp-pagenavi a :hover {
+  font-weight: bold;
+}
+.wp-pagenavi span {
+  text-decoration: none;
+  padding: 3px 5px;
+  margin: 2px;
+}
+.wp-pagenavi span :current {
   font-weight: bold;
 }
 

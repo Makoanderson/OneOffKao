@@ -22,7 +22,7 @@
                 </div>
                 <article class="c-Nav">
                     <div class="l-f-Header__link">
-                    <div class="c-Nav">
+                    <nav class="c-Nav">
                         <!--<nav class="c-Nav__body">
                             <ul id="menu-global-navi" class="c-Nav__body__menu">
                                 <li>
@@ -64,6 +64,7 @@
                                 </li>
                             </ul>
                         </nav>-->
+                        </nav>
                         </div>
                     <?php 
                     $headerNav = array (
@@ -74,10 +75,10 @@
                         'theme_location' => 'spheader'
                     );
                     wp_nav_menu( $Spheader ); ?>
-                    <div class="c-Nav__iconf">
+                    <section class="c-Nav__iconf">
                             <i class="fa-brands fa-facebook-square"></i>
                             <i class="fa-brands fa-instagram"></i>
-                        </div>
+                    </section>
                 </article>
                 </div>
             </header>

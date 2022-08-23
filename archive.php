@@ -112,13 +112,13 @@
                 </div>
             </header>-->
             <main class="l-Main">
-                <div class="c-title">
+                <section class="c-title">
                     <div class="c-title-blog">
                     <!--<img class="c-title-blog__img1" src="../img/GerberaPNG/g02.png">
                     <img class="c-title-blog__img2" src="../img/GerberaPNG/g03.png">-->
                     <h2><span>Blog</span></h2>
                     </div>
-                </div>
+                </section>
                 <section class="p-archive">
                     <?php if(have_posts()):while(have_posts()):the_post();?>
                     <div class="p-archive-main">

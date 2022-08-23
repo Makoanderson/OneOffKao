@@ -74,18 +74,26 @@
     clear: both;
     align-items: center;
     margin: 70px auto 40px;
-    width: 60%;
-    @madia screen and (min-width: 768px){
-        width: 35%;
+    width: 50%;
+    @media screen and (min-width: 768px){
+        width: 25%;
         align-items: center;
         margin: 0 auto 145px;
     }
-}
-.wp-pagenavi a .wp-pagenavi span {
-    text-decoration: none;
-    padding: 3px 5px;
-    margin: 2px;
-}
-.wp-pagenavi a:hover, .wp-pagenavi span, :current {
-    font-weight: bold;
+    a {
+        text-decoration: none;
+        padding: 3px 5px;
+        margin: 2px;
+        :hover {
+            font-weight: bold;
+        }
+    }
+    span {
+        text-decoration: none;
+        padding: 3px 5px;
+        margin: 2px;
+        :current {
+            font-weight: bold;
+        }
+    }
 }
