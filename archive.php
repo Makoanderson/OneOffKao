@@ -174,7 +174,7 @@
                         <p>記事はありません。</p>
                     <?php endif;?>
                 </section>
-                <div class="p-archive-page">
+                <!--<div class="p-archive-page">
                     <ul class="p-archive-page-pagenation">
                         <li><a href="#">＜</a></li>
                         <li><a href="#">Prev</a></li>
@@ -184,6 +184,7 @@
                         <li><a href="#">Next</a></li>
                         <li><a href="#">＞</a></li>
                     </ul>
-                </div>
+                </div>-->
+                <?php wp_pagenavi(); ?>
             </main>
         <?php get_footer();?>    
