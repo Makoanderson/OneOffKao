@@ -22,7 +22,7 @@
                 </div>
                 <article class="c-Nav">
                     <div class="l-f-Header__link">
-                    <nav class="c-Nav">
+                        <nav class="c-Nav-f">
                         <!--<nav class="c-Nav__body">
                             <ul id="menu-global-navi" class="c-Nav__body__menu">
                                 <li>
@@ -65,7 +65,7 @@
                             </ul>
                         </nav>-->
                         </nav>
-                        </div>
+                    </div>
                     <?php 
                     $headerNav = array (
                         'theme_location' => 'header-navigation',

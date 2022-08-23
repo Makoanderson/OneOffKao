@@ -4,62 +4,10 @@
 .c-Nav{
     display:flex;
     text-align: right;
-.menu-headermenu-container {
-    /*background-color: c.$lightbrown;*/
-    width: 100%;
+    height: 126px;
     @media screen and (min-width: 768px) {
-        width: 300%;
-        display: flex;
-    }
-    /* .menu {
-        width: 100%;
-        @media screen and (min-width: 768px) {
-            width: 100%;
-        }*/
-        ul {
-            list-style: none;
-            width: 100%;
-            /*display: flex;
-            flex-wrap: wrap;*/
-        }
-        .menu {
-            color: c.$darkbrown;
-            display: flex;
-            display: none;
-            flex-wrap: wrap;
-            @media screen and (min-width:768px) {
-                display: block;
-                width: 100%;
-                display: flex;
-                font-size: 24px;
-                padding:45px 0;
-                /*border-left: 1px solid c.$midbronw;*/
-            }
-            @media screen and (min-width: 768px) and (max-width: 1110px) {
-                display: block;
-                width: 100%;
-                display: flex;
-                font-size: 16px;
-            }
-            li {
-                border-left: 1px solid c.$midbronw;
-                /*margin: 45px 0;*/
-                a {
-                    margin: 0 40px;
-                    text-align: center;
-                    align-items: center;
-                    justify-content: center;
-                    @media screen and (min-width: 768px) and (max-width: 960px) {
-                        margin: 45px 20px;
-                    }
-                }
-            }
-        }
-        
-        /*ul li {
-            width: 78px;
-            height: 46px;
-        }*/
+        background-color: c.$lightbrown;
+        margin-top: 150px;
     }
     &__iconf {
         color: c.$darkbrown;
@@ -123,100 +71,161 @@
             }
         }
     }
-.menu-spheader-container {
+    
+}
+.menu-headermenu-container {
+    /*background-color: c.$lightbrown;*/
     width: 100%;
-    @media screen and (min-width: 375px) {
-        width: 120%;
-    }
-    @media screen and (min-width: 428px) {
-        width: 150%;
-    }
     @media screen and (min-width: 768px) {
-        width: 0;
-    }
-    .menu {
-        color: c.$darkbrown;
-        display: block;
+        width: 300%;
         display: flex;
-        flex-wrap: wrap;
-        list-style: none;
-        li {
-            width: calc(92%/3);
-            height: 46px;
-            flex-wrap: wrap;
-            justify-content: center;
-            background-color: c.$lightbrown;
-            /*padding: 2.5px;*/
-            margin: 2.5px;
-            a {
-                display: block;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                /*flex-wrap: wrap;*/
-            }
-        }
-        @media screen and (min-width:768px) {
-            display: none;
-        }
+        /*margin-top: 150px;*/
+        height: 126px;
+        background-color: c.$lightbrown;
     }
-    }
-    .menu-headernavi-container {
-        /*background-color: c.$lightbrown;*/
+    /* .menu {
         width: 100%;
         @media screen and (min-width: 768px) {
-            width: 300%;
-            display: flex;
-        }
-        /* .menu {
             width: 100%;
-            @media screen and (min-width: 768px) {
+        }*/
+        ul {
+            list-style: none;
+            width: 100%;
+            /*display: flex;
+            flex-wrap: wrap;*/
+        }
+        .menu {
+            color: c.$darkbrown;
+            display: flex;
+            display: none;
+            flex-wrap: wrap;
+            @media screen and (min-width:768px) {
+                display: block;
                 width: 100%;
-            }*/
-            ul {
-                list-style: none;
-                width: 100%;
-                /*display: flex;
-                flex-wrap: wrap;*/
-            }
-            .menu {
-                color: c.$darkbrown;
                 display: flex;
-                display: none;
-                flex-wrap: wrap;
-                @media screen and (min-width:768px) {
-                    display: block;
-                    width: 100%;
-                    display: flex;
-                    font-size: 24px;
-                    padding:55px 0;
-                    /*border-left: 1px solid c.$midbronw;*/
-                }
-                @media screen and (min-width: 768px) and (max-width: 1110px) {
-                    display: block;
-                    width: 100%;
-                    display: flex;
-                    font-size: 16px;
-                }
-                li {
-                    border-left: 1px solid c.$midbronw;
-                    /*margin: 45px 0;*/
-                    a {
-                        margin: 0 40px;
-                        text-align: center;
-                        align-items: center;
-                        justify-content: center;
-                        @media screen and (min-width: 768px) and (max-width: 960px) {
-                            margin: 45px 20px;
-                        }
+                font-size: 24px;
+                padding:45px 0;
+                /*border-left: 1px solid c.$midbronw;*/
+            }
+            @media screen and (min-width: 768px) and (max-width: 1110px) {
+                display: block;
+                width: 100%;
+                display: flex;
+                font-size: 16px;
+            }
+            li {
+                border-left: 1px solid c.$midbronw;
+                /*margin: 45px 0;*/
+                a {
+                    margin: 0 40px;
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                    @media screen and (min-width: 768px) and (max-width: 960px) {
+                        margin: 45px 20px;
                     }
                 }
             }
-            
-            /*ul li {
-                width: 78px;
-                height: 46px;
-            }*/
         }
+        
+        /*ul li {
+            width: 78px;
+            height: 46px;
+        }*/
+    }
+    .menu-spheader-container {
+        width: 100%;
+        @media screen and (min-width: 375px) {
+            width: 120%;
+        }
+        @media screen and (min-width: 428px) {
+            width: 150%;
+        }
+        @media screen and (min-width: 768px) {
+            width: 0;
+        }
+        .menu {
+            color: c.$darkbrown;
+            display: block;
+            display: flex;
+            flex-wrap: wrap;
+            list-style: none;
+            li {
+                width: calc(92%/3);
+                height: 46px;
+                flex-wrap: wrap;
+                justify-content: center;
+                background-color: c.$lightbrown;
+                /*padding: 2.5px;*/
+                margin: 2.5px;
+                a {
+                    display: block;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    /*flex-wrap: wrap;*/
+                }
+            }
+            @media screen and (min-width:768px) {
+                display: none;
+            }
+        }
+        }
+        .menu-headernavi-container {
+            /*background-color: c.$lightbrown;*/
+            width: 100%;
+            @media screen and (min-width: 768px) {
+                width: 300%;
+                display: flex;
+            }
+            /* .menu {
+                width: 100%;
+                @media screen and (min-width: 768px) {
+                    width: 100%;
+                }*/
+                ul {
+                    list-style: none;
+                    width: 100%;
+                    /*display: flex;
+                    flex-wrap: wrap;*/
+                }
+                .menu {
+                    color: c.$darkbrown;
+                    display: flex;
+                    display: none;
+                    flex-wrap: wrap;
+                    @media screen and (min-width:768px) {
+                        display: block;
+                        width: 100%;
+                        display: flex;
+                        font-size: 24px;
+                        padding:55px 0;
+                        /*border-left: 1px solid c.$midbronw;*/
+                    }
+                    @media screen and (min-width: 768px) and (max-width: 1110px) {
+                        display: block;
+                        width: 100%;
+                        display: flex;
+                        font-size: 16px;
+                    }
+                    li {
+                        border-left: 1px solid c.$midbronw;
+                        /*margin: 45px 0;*/
+                        a {
+                            margin: 0 40px;
+                            text-align: center;
+                            align-items: center;
+                            justify-content: center;
+                            @media screen and (min-width: 768px) and (max-width: 960px) {
+                                margin: 45px 20px;
+                            }
+                        }
+                    }
+                }
+                
+                /*ul li {
+                    width: 78px;
+                    height: 46px;
+                }*/
+            }
     
-}

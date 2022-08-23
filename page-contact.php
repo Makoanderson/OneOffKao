@@ -100,6 +100,7 @@
                     </div>
                     <input type="submit" class="button" value="送信">
                 </form>-->
+                <?php echo apply_shortcodes( '[contact-form-7 id="84" title="コンタクトフォーム 1"]' ); ?>
                 </article>
                 <?php endwhile; ?>
             <?php endif; ?>

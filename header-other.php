@@ -22,7 +22,7 @@
                 </div>
                 <article class="c-Nav">
                     <div class="l-Header__link">
-                    <div class="c-Nav">
+                    <nav class="c-Nav">
                         <!--<nav class="c-Nav__body">
                             <ul id="menu-global-navi" class="c-Nav__body__menu">
                                 <li>
