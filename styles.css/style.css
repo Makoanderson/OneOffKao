@@ -626,7 +626,7 @@ button {
 
 .menu-headernavi-container {
   /*background-color: c.$lightbrown;*/
-  width: 100%;
+  /*width: 100%;*/
   /* .menu {
       width: 100%;
       @media screen and (min-width: 768px) {
@@ -1036,7 +1036,7 @@ button {
   /*top: 0;
   left: 0;
   z-index: 10;*/
-  margin-left: 10%;
+  /*margin-left: 10%;*/
 }
 @media screen and (min-width: 768px) {
   .c-title-blog {
@@ -1717,7 +1717,7 @@ button {
 .p-front-info1 {
   /*display: flex;*/
   justify-content: space-around;
-  margin: 25px auto 0;
+  margin: 100px auto 50px;
   width: 80%;
 }
 @media screen and (min-width: 768px) {
@@ -1754,11 +1754,12 @@ button {
 }
 .p-front-about-info {
   display: block;
-  margin-top: 25px;
+  margin-top: 100px;
 }
 @media screen and (min-width: 768px) {
   .p-front-about-info {
     display: flex;
+    margin-top: 25px;
   }
 }
 .p-front-about__img {
