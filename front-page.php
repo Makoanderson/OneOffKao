@@ -35,7 +35,7 @@
                         <?php endwhile; else:?>
                             <p>記事はありません。</p>
                         <?php endif;?>
-                    </article>
+                </article>
                 </section>
                 <section class="p-front-about">
                     <div class="c-title-about">
@@ -54,19 +54,33 @@
                         <img class="c-title-blog__img2" src="../img/GerberaPNG/g03.png">-->
                         <h2><span>Blog</span></h2>
                     </div>
-                    <div class="p-front-blog1">
+                    <div class="container">
+                    <?php if(have_posts()):while(have_posts()):the_post();?>
+                    <article class="p-front-blog1">
                         <div class="p-front-blog1__title">
-                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog1.jpg">
+                            <?php the_post_thumbnail(); ?>
+                            <!--<img src="/img/blog1.jpg">
+                            <p class="blog-title"><a href="#">テキストテキストテキスト</a></p>-->
+                        </div>
+                        <div class="desc">
+                            <h3>
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_title(); ?>
+                                </a>
+                            </h3>
+                        </div>
+                        <!--<div class="p-front-blog1__title">
+                            <img src="/img/blog1.jpg">
                             <p class="blog-title"><a href="#">テキストテキストテキスト</a></p>
                         </div>
                         <div class="p-front-blog1__title">
-                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog1.jpg">
-                            <p class="blog-title"><a href="#">テキストテキストテキスト</a></p>
-                        </div>
-                        <div class="p-front-blog1__title">
-                            <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog1.jpg" class="blog-img1">
+                            <img src="/img/blog1.jpg" class="blog-img1">
                             <p class="blog-title blog-title-sp"><a href="#">テキストテキストテキスト</a></p>
-                        </div>
+                        </div>-->
+                    </article>
+                    <?php endwhile; else:?>
+                        <p>記事はありません。</p>
+                    <?php endif;?>
                     </div>
                 </section>
             </main>

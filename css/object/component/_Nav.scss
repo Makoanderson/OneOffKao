@@ -73,6 +73,78 @@
     }
     
 }
+.c-nav{
+    display:flex;
+    text-align: right;
+    height: 126px;
+    @media screen and (min-width: 768px) {
+        background-color: c.$lightbrown;
+        /*margin-top: 150px;*/
+    }
+    &__iconf {
+        color: c.$darkbrown;
+        height: 20px;
+        width: 20px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            display: block;
+            display: flex;
+            width: 60px;
+            margin: auto 60px;
+            justify-content: space-between;
+            i {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            display: block;
+            display: flex;
+            width: 60px;
+            margin: 45px 10px;
+            justify-content: space-between;
+            i {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    &__icon {
+        color: c.$darkbrown;
+        height: 20px;
+        width: 20px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            display: block;
+            display: flex;
+            width: 60px;
+            margin: 70px 60px;
+            justify-content: space-between;
+            i {
+                width: 24px;
+                height: 24px;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 960px) {
+            display: block;
+            display: flex;
+            width: 60px;
+            margin: 63px 10px;
+            justify-content: space-between;
+            i {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+    
+}
 .menu-headermenu-container {
     /*background-color: c.$lightbrown;*/
     /*width: 100%;*/
@@ -176,7 +248,7 @@
             /*width: 100%;*/
             @media screen and (min-width: 768px) {
                 width: 300%;
-                display: flex;
+                /*display: flex;*/
             }
             /* .menu {
                 width: 100%;
@@ -228,4 +300,15 @@
                     height: 46px;
                 }*/
             }
+
+#menu-item-46 ::before {
+    content: '\f015';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 400;
+    font-size: 1rem;
+    color: c.$darkbrown;
+    display: inline-block;
+    height: 10px;
+    width: 50px;
+}
     

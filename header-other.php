@@ -20,9 +20,9 @@
                         <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/One-Off logo black[708].png" alt="<?php bloginfo( 'name' ); ?>">
                     </a>
                 </div>
-                <article class="c-Nav">
+                <article class="c-nav">
                     <div class="l-Header__link">
-                    <nav class="c-Nav">
+                    <nav class="c-nav-f">
                         <!--<nav class="c-Nav__body">
                             <ul id="menu-global-navi" class="c-Nav__body__menu">
                                 <li>

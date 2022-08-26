@@ -14,9 +14,9 @@
         margin: 100px auto 50px;
         width: 80%;
         @media screen and (min-width: 768px) {
-            margin: 100px 100px 0;
+            margin: 100px 50px 100px 75px;
         }
-        &__title img {
+        .image img {
             width: 144px;
             height: 144px;
             @media screen and (min-width: 768px) {
@@ -75,15 +75,18 @@
         @media screen and (min-width: 768px) {
             margin-bottom: 150px;
         }
+        .container {
+            display: flex;
+        }
     }
     &-blog1 {
-        display: flex;
+        /*display: flex;*/
         justify-content: space-around;
         margin: 25px auto 0;
         width: 80%;
         padding-top: 100px;
         @media screen and (min-width: 768px) {
-            margin: 0px auto 0;
+            margin: 0 75px 75px;
         }
         &__title {
             p {
