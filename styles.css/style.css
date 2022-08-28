@@ -2154,6 +2154,61 @@ button {
     height: 50px;
   }
 }
+.p-inquiry .wpcf7-text {
+  font: 16px/24px sans-serif;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 8px 0;
+  padding: 0.3em;
+  border: 1px solid #2c1806;
+  border-radius: 6px;
+  outline: none;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-inquiry .wpcf7-text {
+    margin: 8px 0 70px;
+    width: 60%;
+  }
+}
+.p-inquiry .wpcf7-textarea {
+  font: 16px/24px sans-serif;
+  box-sizing: border-box;
+  width: 80%;
+  /*height: 127px;*/
+  margin: 8px 0;
+  padding: 0.3em;
+  border: 1px solid #2c1806;
+  border-radius: 6px;
+  outline: none;
+  background-color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .p-inquiry .wpcf7-textarea {
+    margin: 8px 0 70px;
+    width: 60%;
+  }
+}
+.p-inquiry .wpcf7-submit {
+  text-align: center;
+  vertical-align: middle;
+  margin: 0 10px 90px 0;
+  /*padding: 6px 25px;*/
+  width: 44px;
+  height: 26px;
+  color: #2c1806;
+  background-color: #E1CCB0;
+  border: 1px solid #2c1806;
+  border-radius: 6px;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+  .p-inquiry .wpcf7-submit {
+    margin: 100px 0 0 0;
+    width: 100px;
+    height: 50px;
+  }
+}
 
 .p-shop {
   display: flex;
