@@ -114,27 +114,37 @@
             <main class="l-Main">
                 <div class="l-Main-wrapper">
                   <article class="p-blog">
+                    <?php while (have_posts()):the_post();?>
                     <header class="p-blog-info c-title">
                         <div class="c-title-blogtitle">
                             <!--<img class="c-title-blogtitle__img1" src="../img/GerberaPNG/g02.png">
                             <img class="c-title-blogtitle__img2" src="../img/GerberaPNG/g03.png">-->
-                            <h2><span>お店のお知らせです。</span></h2>
+                            <h2><span><?php the_title();?><!--お店のお知らせです。--></span></h2>
                         </div>
-                        <p class="p-blog-date">4/7<span>2022</span></p>
-                        <p class="p-blog-cat">カテゴリー:お店の紹介</p>
+                        <p class="p-blog-date"><time>公開日:<?php the_time('Y/m/d');?></time>
+                                                <time>最終更新日:<?php the_modified_date('Y/m/d') ?></time><!--4/7<span>2022</span>--></p>
+                        <p class="p-blog-cat">カテゴリー:<?php the_category("/");?><!--お店の紹介--></p>
                     </header>
                     <div class="p-blog-mv">
-                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/sakura-series.jpg" alt="新作商品">
+                        <?php the_post_thumbnail(); ?>
+                        <?php the_content();?>
+                        <!--<img src="/img/sakura-series.jpg" alt="新作商品">
                         <p>テキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキスト
-                        </p>
+                        </p>-->
                     </div>
+                    <?php endwhile;?>
                   </article>
                   <aside class="l-sidebar p-blog-side">
-                    <div class="l-sidebar-menu">
+                    <?php
+                        if ( is_active_sidebar( 'category_widget' ) ) :
+                            dynamic_sidebar( 'category_widget' );
+                        else:
+                    ?>
+                    <!--<div class="l-sidebar-menu">
                         <div class="p-blog-side__title">
-                            <!--<img src="../img/GerberaPNG/g02.png">
-                            <img src="../img/GerberaPNG/g03.png">-->
+                            <img src="../img/GerberaPNG/g02.png">
+                            <img src="../img/GerberaPNG/g03.png">
                             <h3><span>カテゴリー</span></h3>
                         </div>
                         <ul class="p-blog-side__archivemenu">
@@ -143,11 +153,17 @@
                             <li><a href="#">イヤリング</a></li>
                             <li><a href="#">ネックレス</a></li>
                         </ul>
-                    </div>
-                    <div class="l-sidebar-list">
+                    </div>-->
+                    <?php endif;?>
+                    <?php
+                        if ( is_active_sidebar( 'archive_widget' ) ) :
+                            dynamic_sidebar( 'archive_widget' );
+                        else:
+                    ?>
+                    <!--<div class="l-sidebar-list">
                         <div class="p-blog-side__archivetitle">
-                            <!--<img src="../img/GerberaPNG/g02.png">
-                            <img src="../img/GerberaPNG/g03.png">-->
+                            <img src="../img/GerberaPNG/g02.png">
+                            <img src="../img/GerberaPNG/g03.png">
                             <h3><span>月別アーカイブ</span></h3>
                         </div>
                         <ul class="p-blog-side__list">
@@ -155,7 +171,8 @@
                             <li><a href="#">2022年3月 <span class="count">(14)</span></a></li>
                             <li><a href="#">2022年2月 <span class="count">(1)</span></a></li>
                         </ul>
-                    </div>
+                    </div>-->
+                    <?php endif;?>
                   </aside>
                 </div>
             </main>
