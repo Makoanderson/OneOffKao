@@ -141,8 +141,8 @@
                             dynamic_sidebar( 'category_widget' );
                         else:
                     ?>
-                    <!--<div class="l-sidebar-menu">
-                        <div class="p-blog-side__title">
+                    <div class="l-sidebar-menu">
+                        <!--<div class="p-blog-side__title">
                             <img src="../img/GerberaPNG/g02.png">
                             <img src="../img/GerberaPNG/g03.png">
                             <h3><span>カテゴリー</span></h3>
@@ -152,16 +152,16 @@
                             <li><a href="#">お知らせ</a></li>
                             <li><a href="#">イヤリング</a></li>
                             <li><a href="#">ネックレス</a></li>
-                        </ul>
-                    </div>-->
+                        </ul>-->
+                    </div>
                     <?php endif;?>
                     <?php
                         if ( is_active_sidebar( 'archive_widget' ) ) :
                             dynamic_sidebar( 'archive_widget' );
                         else:
                     ?>
-                    <!--<div class="l-sidebar-list">
-                        <div class="p-blog-side__archivetitle">
+                    <div class="l-sidebar-list">
+                        <!--<div class="p-blog-side__archivetitle">
                             <img src="../img/GerberaPNG/g02.png">
                             <img src="../img/GerberaPNG/g03.png">
                             <h3><span>月別アーカイブ</span></h3>
@@ -170,8 +170,8 @@
                             <li><a href="#">2022年4月 <span class="count">(1)</span></a></li>
                             <li><a href="#">2022年3月 <span class="count">(14)</span></a></li>
                             <li><a href="#">2022年2月 <span class="count">(1)</span></a></li>
-                        </ul>
-                    </div>-->
+                        </ul>-->
+                    </div>
                     <?php endif;?>
                   </aside>
                 </div>

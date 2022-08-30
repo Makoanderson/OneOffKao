@@ -68,7 +68,7 @@
         margin-top: 360px;
         display: block;
     }
-    &__title {
+    #block-9, #block-8 {
         /*position: relative;*/
         margin-bottom: 25px;
         /*background-color: blueviolet;*/
@@ -83,7 +83,7 @@
             /*left: -510px;
             margin-left: 0;*/
         }
-        h3 {
+        h2 {
             position: relative;
             font-size: 16px;
             color: c.$darkbrown;
@@ -98,9 +98,9 @@
                 }
             }
         }
-        span::after{
+        h2::after{
             content: "";
-            background-image: url("./../../img/GerberaPNG/g03sp.png");
+            background-image: url("./../img/GerberaPNG/g03sp.png");
             background-size: 84px 75px;
             opacity: 0.5;
             width: 84px;
@@ -115,9 +115,9 @@
                 display: none;
             }
         }
-        span::before {
+        h2::before {
             content: "";
-            background-image: url("./../../img/GerberaPNG/g02sp.png");
+            background-image: url("./../img/GerberaPNG/g02sp.png");
             background-size: 54px 52px;
             opacity: 0.5;
             width: 54px;
@@ -132,7 +132,7 @@
         }
     }
     &__archivemenu {
-        list-style-image: url("./../../img/GerberaPNG/g06list.png");
+        list-style-image: url("./../img/GerberaPNG/g06list.png");
         line-height: 24px;
         /*background-color: chartreuse;*/
         @media screen and (min-width: 960px) {
@@ -172,7 +172,7 @@
         }
         span::after{
             content: "";
-            background-image: url("./../../img/GerberaPNG/g03sp.png");
+            background-image: url("./../img/GerberaPNG/g03sp.png");
             background-size: 84px 75px;
             opacity: 0.5;
             width: 84px;
@@ -189,7 +189,7 @@
         }
         span::before {
             content: "";
-            background-image: url("./../../img/GerberaPNG/g02sp.png");
+            background-image: url("./../img/GerberaPNG/g02sp.png");
             background-size: 54px 52px;
             opacity: 0.5;
             width: 54px;
@@ -208,8 +208,8 @@
             width: 170%;
             }
     }
-    &__list {
-        list-style-image: url("./../../img/GerberaPNG/g06list.png");
+    .wp-block-archives-list {
+        list-style-image: url("./../img/GerberaPNG/g06list.png");
         /*list-style-position: inside;*/
         /*width: 16px;
         height: 16px;*/
