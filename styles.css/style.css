@@ -2209,6 +2209,14 @@ button {
     height: 50px;
   }
 }
+.p-inquiry .wpcf7 {
+  margin-left: 15%;
+}
+@media screen and (min-width: 768px) {
+  .p-inquiry .wpcf7 {
+    margin-left: 25%;
+  }
+}
 
 .p-shop {
   display: flex;
