@@ -78,24 +78,24 @@
                     <h2><span><?php the_title(); ?><!--About--></span></h2>
                 </div>
                 <div class="c-title-about-img">
-                    <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/Header.jpg">
+                    <!--<img src="/img/Header.jpg">-->
+                    <?php the_post_thumbnail(); ?>
                 </div>
-                <?php the_post_thumbnail(); ?>
                 <div class="p-about">
-                    <div class="p-about-name">
+                    <section class="p-about-name">
                         <h3>プロフィール</h3>
                         <p>道田　香織　／　Michida Kaori</p>
                         <p>One-Off kao代表</p>
                         <p>（革花作家、革花講師、カラーセラピスト）</p>
-                    </div>
-                    <div class="p-about-from">
+                    </section>
+                    <section class="p-about-from">
                         <h3>【出身地】</h3>
                         <p>愛知県名古屋市生まれ、長崎県五島市育ち</p>
-                    </div>
-                    <div class="p-about-story">
+                    </section>
+                    <section class="p-about-story">
                         <h3>【経歴】</h3>
                         <p>元看護師。2017年に働いていた病院が閉院したのを機に退職。当時、趣味で革小物を作っていた兄に誘われたのをきっかけにレザークラフトを始める。その後、兄と二人でOne-Off（ワンオフ）という屋号で、革小物や革アクセサリーを制作販売。様々な作品を制作していくうちに革という素材の自由度の高さに魅力を感じ、ある日突然『革でお花を作ってみたい！』という衝動にかられ、以来ずっと革のお花を作り続けている。革のお花の作り方は習ったことがなく、全て自己流によるもの。主にアクセサリーを制作販売している。</p>
-                    </div>
+                    </section>
                     <div class="p-about-history">
                         <dl>
                             <dt>2018年</dt>
@@ -117,29 +117,29 @@
                             </dd>
                         </dl>
                     </div>
-                    <div class="p-about-experience">
+                    <section class="p-about-experience">
                         <h3>【実績】</h3>
                         <ul>
                             <li>2018年～2021年　販売実績500点以上</li>
                             <li>minne、Creemaでの特集掲載10回以上</li>
                             <li>【minneとものづくりと】企画参加<br>→花びらをスキャンカットで。<br>帽子に集まる「春」を再現。<br>→【特別企画】想いは、つながる。<br>あなたに届けたいニベアフォーチュンデコ缶。</li>
                         </ul>
-                    </div>
-                    <div class="p-about-skilled">
+                    </section>
+                    <section class="p-about-skilled">
                         <h3>【得意なこと】</h3>
                         <ul>
                             <li>革の染色</li>
                             <li>模写（特に植物、マンガのキャラクター等）</li>
                         </ul>
-                    </div>
-                    <div class="p-about-hobby">
+                    </section>
+                    <section class="p-about-hobby">
                         <h3>【趣味、好きなこと】</h3>
                         <ul>
                             <li>タロット占い</li>
                             <li>ピアノ弾き語り</li>
                         </ul>
-                    </div>
-                    <div class="p-about-sns">
+                    </section>
+                    <section class="p-about-sns">
                         <h3>【SNS】</h3>
                         <ul>
                             <li>Instagram</li>
@@ -147,7 +147,7 @@
                             <li>Facebook</li>
                             <li><a href="https://www.facebook.com/oneoffkao/">https://www.facebook.com/oneoffkao/</a></li>
                         </ul>
-                    </div>
+                    </section>
                 </div>
                 <div class="c-title-about-bot">
                     <img id="img1" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog2.jpg">
