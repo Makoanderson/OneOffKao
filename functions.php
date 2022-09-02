@@ -3,22 +3,25 @@
 }
 add_action( 'after_setup_theme', 'OneOffKao_theme_setup' );
 function OneOffKao_enqueue_scripts() {
-    wp_enqueue_style(
-        'googlefonts',
-        'https://fonts.googleapis.com/css?
+    wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?
         family=Philosopher',
         array(),
-        '1.0.0'
-    );
+        '1.0.0');
     wp_enqueue_style(
-        'OneOffKao-theme-styles',
-            get_template_directory_uri() . 
+        'OneOffKao-theme-styles', get_template_directory_uri() . 
             '/styles.css/style.css',
             array(),
-            '1.0.0'
-    );
+            '1.0.0');
 }
 add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
+?>
+
+<?php function my_scripts_method() {
+    wp_enqueue_script('slick.min',
+    get_stylesheet_directory_uri(). '/slick/slick.min.js',
+    array('jquery'), '1.8.1', true);
+}
+add_action('wp_enqueue_scripts', 'my_scripts_method');
 ?>
 
 <?php

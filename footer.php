@@ -37,5 +37,19 @@
             </footer>
         </div>
         <?php wp_footer(); ?>
+        <script>
+            jQuery(function(){
+                jQuery('.p-front-info1').slick({
+                    autoplay: true,
+                    autoplaySpeed: 3000,
+                    speed: 800,
+                    infinite: true,
+                    slidesToShow: 3,
+                    slidesToScroll: 3,
+                    arrows: true,
+                    dots: true,
+                });
+            });
+        </script>
     </body>
 </html>
