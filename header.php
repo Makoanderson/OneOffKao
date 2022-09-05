@@ -6,6 +6,7 @@
             <meta name="description" content="<?php bloginfo( 'description' ); ?>">
     <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+        <link rel="stylesheet" type="text/css" href="slick/slick.css">
         <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">-->
         <!--<link rel="stylesheet" href="/css/style.css/style.css">-->
         <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">-->

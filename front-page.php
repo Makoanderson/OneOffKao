@@ -6,7 +6,7 @@
                         <img class="c-title-info__img2" src="../img/GerberaPNG/g03.png"> -->
                         <h2><span>新着情報</span></h2>
                     </div>
-                <article>
+                <article class="autoplay">
                     <?php if(have_posts()):while(have_posts()):the_post();?>
                     <div class="p-front-info1">
                         <div class="image">

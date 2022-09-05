@@ -24,7 +24,14 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
 add_action('wp_enqueue_scripts', 'my_scripts_method');
 ?>
 
-<?php
+<?php add_action('wp_enqueue_scripts', 'my_enqueues_script');
+        function my_enqueue_scripts(){
+            wp_enqueue_script('slick-script', get_template_directory_uri().'/slick/slick.min.js', array(), '1.0.0', true);
+            wp_enqueue_script('my-script', get_template_directory_uri(). '/js/script.js', array('slick-script'), '1.0.0', true);
+        }
+?>
+
+<?php 
     register_nav_menu( $location, $description );
 
     function twpp_setup_theme() {
