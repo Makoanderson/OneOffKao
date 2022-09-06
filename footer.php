@@ -37,22 +37,22 @@
             </footer>
         </div>
         <?php wp_footer(); ?>
-        <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.jp"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        <script type="text/javascript" src="slick/slick.min.js"></script>
-        <script type="text/javascript">
+        <script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri());?>/slick-1.8.1/slick/slick.min.js"></script>
+        <script src="<?php echo esc_url(get_template_directory_uri());?>/OneOffKao.js"></script>
             $(document).ready(function(){
-                $('.p-front-info1').slick({
-                    setting-name:setting-value
+                $('.autoplay').slick({
+                    setting-name: setting-value
                 });
             });
         </script>
         <script>
-            $('autopaly').slick({
-                slidesToShow: 3,
+            $('.autoplay').slick({
+                slidesToShow: 4,
                 slidesToScroll: 1,
-                autoplaySpeed: 2000;
+                autoplaySpeed: 2000,
             });
         </script>
     </body>

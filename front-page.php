@@ -8,7 +8,7 @@
                     </div>
                 <article class="autoplay">
                     <?php if(have_posts()):while(have_posts()):the_post();?>
-                    <div class="p-front-info1">
+                    <div class="p-front-info1" id="js-slider">
                         <div class="image">
                             <?php the_post_thumbnail(); ?>
                         </div>
@@ -32,6 +32,7 @@
                             <p class="info-title info-title-sp"><a href="#">テキストテキストテキスト</a></p>
                         </div>-->
                     </div>
+                    <div class="thumbs_bots"></div>
                         <?php endwhile; else:?>
                             <p>記事はありません。</p>
                         <?php endif;?>

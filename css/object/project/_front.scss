@@ -2,10 +2,13 @@
     &-info {
         margin: 55px 0;
         @media screen and (min-width: 768px) {
-            margin: 55px 0 150px;
+            margin: 55px 0 0;
         }
         article {
             display: flex;
+            width: 85%;
+            margin: 0 auto;
+            position: relative;
         }
     }
     &-info1 {
@@ -16,6 +19,16 @@
         @media screen and (min-width: 768px) {
             margin: 100px 50px 100px 75px;
         }
+    &-info1 .slick-slide {
+        height: 400px;
+        overflow: hidden;
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
         .image img {
             width: 144px;
             height: 144px;
@@ -32,6 +45,20 @@
             p {
                 margin-top: 12px;
             }
+        }
+        .thumbs_bots {
+            margin: 10px 0 0;
+        }
+        .thumbs_list li {
+            display: inline-block;
+            width: 150px;
+            height: 80px;
+            opacity: 0.4;
+            cursor: pointer;
+            transition: opacity 0.3s;
+        }
+        .thumbs_list li.slick-active {
+            opacity: 1;
         }
     }
     &-about {

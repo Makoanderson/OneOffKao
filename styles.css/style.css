@@ -1845,11 +1845,14 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-front-info {
-    margin: 55px 0 150px;
+    margin: 55px 0 0;
   }
 }
 .p-front-info article {
   display: flex;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
 }
 .p-front-info1 {
   /*display: flex;*/
@@ -1861,6 +1864,17 @@ button {
   .p-front-info1 {
     margin: 100px 50px 100px 75px;
   }
+}
+.p-front-info1-info1 .slick-slide {
+  height: 400px;
+  overflow: hidden;
+}
+.p-front-info1-info1 .slick-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .p-front-info1 .image img {
   width: 144px;
@@ -1880,6 +1894,20 @@ button {
 }
 .p-front-info1__title p {
   margin-top: 12px;
+}
+.p-front-info1 .thumbs_bots {
+  margin: 10px 0 0;
+}
+.p-front-info1 .thumbs_list li {
+  display: inline-block;
+  width: 150px;
+  height: 80px;
+  opacity: 0.4;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.p-front-info1 .thumbs_list li.slick-active {
+  opacity: 1;
 }
 .p-front-about {
   margin-bottom: 55px;

@@ -3,8 +3,7 @@
 }
 add_action( 'after_setup_theme', 'OneOffKao_theme_setup' );
 function OneOffKao_enqueue_scripts() {
-    wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?
-        family=Philosopher',
+    wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css?family=Philosopher',
         array(),
         '1.0.0');
     wp_enqueue_style(
@@ -14,21 +13,6 @@ function OneOffKao_enqueue_scripts() {
             '1.0.0');
 }
 add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
-?>
-
-<?php function my_scripts_method() {
-    wp_enqueue_script('slick.min',
-    get_stylesheet_directory_uri(). '/slick/slick.min.js',
-    array('jquery'), '1.8.1', true);
-}
-add_action('wp_enqueue_scripts', 'my_scripts_method');
-?>
-
-<?php add_action('wp_enqueue_scripts', 'my_enqueues_script');
-        function my_enqueue_scripts(){
-            wp_enqueue_script('slick-script', get_template_directory_uri().'/slick/slick.min.js', array(), '1.0.0', true);
-            wp_enqueue_script('my-script', get_template_directory_uri(). '/js/script.js', array('slick-script'), '1.0.0', true);
-        }
 ?>
 
 <?php 

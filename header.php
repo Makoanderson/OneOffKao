@@ -6,7 +6,8 @@
             <meta name="description" content="<?php bloginfo( 'description' ); ?>">
     <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link rel="stylesheet" type="text/css" href="slick/slick.css">
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">-->
         <!--<link rel="stylesheet" href="/css/style.css/style.css">-->
         <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">-->
