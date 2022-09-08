@@ -7,7 +7,10 @@
                         <h2><span>新着情報</span></h2>
                     </div>
                 <article class="autoplay">
-                    <?php if(have_posts()):while(have_posts()):the_post();?>
+                    <?php /*if(have_posts()):while(have_posts()):the_post();*/?>
+                    <?php $args=['tag_id'=>'8'];
+                            $custom_posts=get_posts($args);
+                            foreach($custom_posts as $post): setup_postdata($post);?>
                     <div class="p-front-info1" id="js-slider">
                         <div class="image">
                             <?php the_post_thumbnail(); ?>
@@ -32,10 +35,11 @@
                             <p class="info-title info-title-sp"><a href="#">テキストテキストテキスト</a></p>
                         </div>-->
                     </div>
+                    <?php endforeach;?>
                     <div class="thumbs_bots"></div>
-                        <?php endwhile; else:?>
+                        <?php /*endwhile; else:?>
                             <p>記事はありません。</p>
-                        <?php endif;?>
+                        <?php endif;*/?>
                 </article>
                 </section>
                 <section class="p-front-about">
@@ -56,7 +60,10 @@
                         <h2><span>Blog</span></h2>
                     </div>
                     <div class="container">
-                    <?php if(have_posts()):while(have_posts()):the_post();?>
+                    <?php /*if(have_posts()):while(have_posts()):the_post();*/?>
+                    <?php $args=['tag_id'=>'9'];
+                                $custom_posts=get_posts($args);
+                                foreach($custom_posts as $post): setup_postdata($post);?>
                     <article class="p-front-blog1">
                         <div class="p-front-blog1__title">
                             <?php the_post_thumbnail(); ?>
@@ -79,9 +86,11 @@
                             <p class="blog-title blog-title-sp"><a href="#">テキストテキストテキスト</a></p>
                         </div>-->
                     </article>
-                    <?php endwhile; else:?>
+                    <?php endforeach;?>
+                    <div class="thumbs_bots"></div>
+                    <?php /*endwhile; else:?>
                         <p>記事はありません。</p>
-                    <?php endif;?>
+                    <?php endif;*/?>
                     </div>
                 </section>
             </main>

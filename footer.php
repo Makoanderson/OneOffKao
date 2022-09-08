@@ -42,12 +42,13 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri());?>/slick-1.8.1/slick/slick.min.js"></script>
         <script src="<?php echo esc_url(get_template_directory_uri());?>/OneOffKao.js"></script>
-            $(document).ready(function(){
+        <!--<script>   
+        $(document).ready(function(){
                 $('.autoplay').slick({
                     setting-name: setting-value
                 });
             });
-        </script>
+        </script>-->
         <script>
             $('.autoplay').slick({
                 slidesToShow: 4,

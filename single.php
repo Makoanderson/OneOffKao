@@ -128,6 +128,7 @@
                     <div class="p-blog-mv">
                         <?php the_post_thumbnail(); ?>
                         <?php the_content();?>
+                        <?php the_tags();?>
                         <!--<img src="/img/sakura-series.jpg" alt="新作商品">
                         <p>テキストテキストテキストテキストテキストテキストテキストテキスト
                         テキストテキストテキストテキストテキストテキストテキストテキスト
