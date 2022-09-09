@@ -102,3 +102,16 @@ function wpbeg_widgets_init() {
 }
 add_action( 'widgets_init', 'wpbeg_widgets_init' );
 ?>
+
+<?php 
+    /*add_action('pre_get_posts', 'my_pre_get_posts');
+    function my_pre_get_posts( $query) {
+        if($query->is_admi()|| !$query->is_main_query()) {
+            return;
+        }
+        if ( $query->is_home()){
+            $query->set('posts_per_page', 3);
+            return;
+        }
+    }
+*/?>

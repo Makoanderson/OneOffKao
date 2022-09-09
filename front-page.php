@@ -60,10 +60,17 @@
                         <h2><span>Blog</span></h2>
                     </div>
                     <div class="container">
-                    <?php /*if(have_posts()):while(have_posts()):the_post();*/?>
-                    <?php $args=['tag_id'=>'9'];
+                    <?php $args=array(
+                        'tag_id'=>'9',
+                        'posts_per_page'=>3,
+                    );
+                    $custom_posts=get_posts($args);?>
+                    <?php foreach($custom_posts as $post): setup_postdata($post);?>
+                    <?php if($the_query->have_posts()):while($the_query->have_posts()):$the_query->the_post();?>
+                    <?php /*$args=['tag_id'=>'9'];
                                 $custom_posts=get_posts($args);
-                                foreach($custom_posts as $post): setup_postdata($post);?>
+                                foreach($custom_posts as $post): setup_postdata($post);*/?>
+                    <?php /*$args=array('posts_per_page'=>3);*/?>
                     <article class="p-front-blog1">
                         <div class="p-front-blog1__title">
                             <?php the_post_thumbnail(); ?>
@@ -88,9 +95,9 @@
                     </article>
                     <?php endforeach;?>
                     <div class="thumbs_bots"></div>
-                    <?php /*endwhile; else:?>
+                    <?php endwhile; else:?> 
                         <p>記事はありません。</p>
-                    <?php endif;*/?>
+                    <?php endif; /*wp_reset_postdata();*/?>
                     </div>
                 </section>
             </main>
