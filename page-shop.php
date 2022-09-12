@@ -123,20 +123,28 @@
                 <div class="p-shop-infobox">
                     <p>ここに全体のお知らせ</p>
                 </div>
+                <?php $args=['tag'=>'shop-info'];
+                $custom_posts=get_posts($args);
+                foreach($custom_posts as $post):setup_postdata($post);?>
                 <div class="p-shop">
                     <div class="p-shop-img">
-                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
+                        <?php the_post_thumbnail();?>
+                        <!--<img src="<?/*php echo esc_url( get_template_directory_uri() );*/?>/img/tulip.jpg">-->
                     </div>
                     <div class="p-shop-text">
-                        <a href="#">
-                            <h3>←BASEでお求めの方はこちらです。</h3>
-                            <p>お店ごとのお知らせ。</p>
-                        </a>
+                        <h3>
+                            <a href="<?php the_permalink();?>"><!--←BASEでお求めの方はこちらです。-->
+                            <?php the_title();?>
+                            <!--<p>お店ごとのお知らせ。</p>-->
+                            </a>
+                        </h3>
+                        <?php echo mb_substr(get_the_excerpt(),0,50);?>
+                        <a href="<?php the_permalink();?>">Read more→</a>
                     </div>
                 </div>
-                <div class="p-shop">
+                <!--<div class="p-shop">
                     <div class="p-shop-img">
-                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
+                        <img src="<?/*php echo esc_url( get_template_directory_uri() );*/?>/img/tulip.jpg">
                     </div>
                     <div class="p-shop-text">
                         <a href="#">
@@ -147,7 +155,7 @@
                 </div>
                 <div class="p-shop">
                     <div class="p-shop-img">
-                        <img src="<?php echo esc_url( get_template_directory_uri() );?>/img/tulip.jpg">
+                        <img src="<?/*php echo esc_url( get_template_directory_uri() );*/?>/img/tulip.jpg">
                     </div>
                     <div class="p-shop-text">
                         <a href="#">
@@ -155,6 +163,8 @@
                             <p>お店ごとのお知らせ。</p>
                         </a>
                     </div>
-                </div>
+                </div>-->
+                <?php endforeach;?>
+                <div class="thumbs_bots"></div>
             </main>
         <?php get_footer();?>    
