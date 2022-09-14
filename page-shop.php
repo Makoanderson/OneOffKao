@@ -117,12 +117,17 @@
                     <img class="c-title-shop__img2" src="../img/GerberaPNG/g03.png">-->
                     <h2><span>Shop一覧</span></h2>
                 </div>
+                <?php $args=['tag'=>'info-all-store'];
+                $custom_posts=get_posts($args);
+                foreach($custom_posts as $post):setup_postdata($post);?>
                 <div class="p-shop-infoboxtitle">
-                    <p>お知らせ</p>
+                    <p><?php the_title();?><!--お知らせ--></p>
                 </div>
                 <div class="p-shop-infobox">
-                    <p>ここに全体のお知らせ</p>
+                    <p><?php echo get_the_excerpt();?><!--ここに全体のお知らせ--></p>
                 </div>
+                <?php endforeach;?>
+                <div class="thumbs_bots"></div>
                 <?php $args=['tag'=>'shop-info'];
                 $custom_posts=get_posts($args);
                 foreach($custom_posts as $post):setup_postdata($post);?>
