@@ -82,7 +82,8 @@
                     <?php the_post_thumbnail(); ?>
                 </div>
                 <div class="p-about">
-                    <section class="p-about-name">
+                    <?php the_content();?>
+                    <!--<section class="p-about-name">
                         <h3>プロフィール</h3>
                         <p>道田　香織　／　Michida Kaori</p>
                         <p>One-Off kao代表</p>
@@ -150,9 +151,9 @@
                     </section>
                 </div>
                 <div class="c-title-about-bot">
-                    <img id="img1" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog2.jpg">
-                    <img id="img2" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog3.jpg">
-                </div>
+                    <img id="img1" src="<?php /*echo esc_url( get_template_directory_uri() );*/?>//img/blog2.jpg">
+                    <img id="img2" src="<?php /*echo esc_url( get_template_directory_uri() );*/?>/img/blog3.jpg"*/>
+                </div>-->
                 </article>
                 <?php endwhile; ?>
             <?php endif; ?>    
