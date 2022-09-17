@@ -1475,6 +1475,69 @@ button {
   list-style: none;
 }
 
+@media screen and (min-width: 768px) {
+  .wp-about {
+    position: relative;
+  }
+}
+.wp-about .size-full {
+  /*position: absolute;*/
+  height: 144px;
+  width: 144px;
+  margin-bottom: 140px;
+  margin-top: 35px;
+}
+@media screen and (min-width: 768px) {
+  .wp-about .size-full {
+    width: 200px;
+    height: 200px;
+    bottom: 800px;
+    left: 250px;
+    position: absolute;
+    /*margin-bottom: 1100px;
+    margin-top: -800px;
+    margin-left: 120%;*/
+  }
+}
+@media screen and (min-width: 960px) {
+  .wp-about .size-full {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 500px;
+    left: 250px;
+  }
+}
+.wp-about .size-large {
+  /*position: absolute;*/
+  width: 116px;
+  height: 114.26px;
+  margin-bottom: 110px;
+  margin-top: 110px;
+  margin-left: 25px;
+}
+@media screen and (min-width: 768px) {
+  .wp-about .size-large {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 40px;
+    bottom: 300px;
+    /*margin-bottom: 600px;
+    margin-left: 60%;
+    margin-top: -1400px;*/
+  }
+}
+@media screen and (min-width: 960px) {
+  .wp-about .size-large {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    bottom: 0px;
+    left: 40px;
+  }
+}
+
 .p-archive {
   margin-top: 100px;
   /*margin-top: 0px;*/

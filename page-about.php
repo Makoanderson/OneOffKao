@@ -81,6 +81,7 @@
                     <!--<img src="/img/Header.jpg">-->
                     <?php the_post_thumbnail(); ?>
                 </div>
+                <section class="wp-about">
                 <div class="p-about">
                     <?php the_content();?>
                     <!--<section class="p-about-name">
@@ -148,15 +149,21 @@
                             <li>Facebook</li>
                             <li><a href="https://www.facebook.com/oneoffkao/">https://www.facebook.com/oneoffkao/</a></li>
                         </ul>
-                    </section>
+                    </section>-->
                 </div>
-                <div class="c-title-about-bot">
-                    <img id="img1" src="<?php /*echo esc_url( get_template_directory_uri() );*/?>//img/blog2.jpg">
-                    <img id="img2" src="<?php /*echo esc_url( get_template_directory_uri() );*/?>/img/blog3.jpg"*/>
-                </div>-->
-                </article>
                 <?php endwhile; ?>
-            <?php endif; ?>    
+            <?php endif; ?>
+                <?php $args=['tag'=>'pictures'];
+                    $custom_posts=get_posts($args);
+                    foreach($custom_posts as $post):setup_postdata($post);?>
+                <div class="c-title-about-bot">
+                    <!--<img id="img1" src="<?php /*echo esc_url( get_template_directory_uri() );*/?>//img/blog2.jpg">
+                    <img id="img2" src="<?php /*echo esc_url( get_template_directory_uri() );*/?>/img/blog3.jpg">-->
+                    <?php the_content();?>
+                </div>
+                </section>
+                </article>
+                <?php endforeach;?>   
             </main>
             <?php get_footer();?>
             <!--<footer class="l-Foot c-Footer">
