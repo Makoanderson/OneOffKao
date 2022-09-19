@@ -96,15 +96,25 @@
                 margin: 200px auto 0;
             }
         }
+        a {
+            @media screen and (min-width: 768px) {
+                padding-top: 500px;
+            }
+            @media screen and (min-width: 1000px) {
+                padding-top: 450px;
+            }
     }
     &-blog {
         margin-bottom: 88px;
-        @media screen and (min-width: 768px) {
-            margin-bottom: 150px;
-        }
         .container {
             display: flex;
         }
+        @media screen and (min-width: 768px) {
+            margin-bottom: 150px;
+        }
+        /*.container {
+            display: flex;
+        }*/
     }
     &-blog1 {
         /*display: flex;*/
@@ -133,6 +143,7 @@
             }
         }
     }
+}
 }
 
 .blog-img1 {

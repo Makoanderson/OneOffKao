@@ -50,7 +50,7 @@
                     </div>
                     <div class="p-front-about-info">
                         <p>One-Off KAO(ワンオフ・カオ)は、<br>革のお花のアクセサリーショップです。<br>全てハンドメイドで、<br>大きな一枚革からはさみで<br>ひとつずつ切り染めてお花に仕立てています。<br>【美しい色合いと立体感】のある形が特徴です。</p>
-                        <a href="<?php the_permalink();?>">Read more→</a>
+                        <a href="<?php /*the_permalink()*/ echo home_url('/about/');?>">Read more→</a>
                         <img class="p-front-about__img" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog2.jpg">
                     </div>    
                 </section>
