@@ -115,3 +115,38 @@ add_action( 'widgets_init', 'wpbeg_widgets_init' );
         }
     }
 */?>
+
+<?
+//タクソノミーの設定
+    add_action('init', 'create_blog_taxonomies', 0);
+
+    //"Blog"カスタム投稿タイプに対してblogというカスタム分類を作成する
+    function create_blog_taxonomies (){
+        $labels = array (
+            'name' => _x('blog', 'taxonomy general name'),
+            'singular_name' => _x('blog', 'taxonomy singular name'),
+            'product' => __('product blog'),
+            'info-blog' => __('infor-blog blog'),
+            'parent_item' => null,
+            'parent_item_colon' => null,
+            'edit_item' => __('Edit blog'),
+            'update_item' => __('Update blog'),
+            'add_new_item' => __('Add New blog'),
+            'new_item_name' => __('New blog name'),
+            'separate_items_with_commas' => __('Separate blog with commas'),
+            'add_or_remove_items' => __('Add or remove blog'),
+            'choose_from_most_used' => __('Choose from the most used blog'),
+            'not_found' => __('No blog found.'),
+            'menu_name' => __('blog'),
+        );
+        $args=array(
+            'hierarchical' => false,
+            'lables' => $labels,
+            'show_ui' => true,
+            'show_admin_column' => true,
+            'update_ount_callback' => '_update_post_term_count',
+            'query_var' => true,
+            'rewrite' => array('slug'=>'blog'),
+        );
+        register_taxonomy ('blog', 'Blog', $args);
+    }
