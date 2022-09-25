@@ -116,12 +116,31 @@ add_action( 'widgets_init', 'wpbeg_widgets_init' );
     }
 */?>
 
-<?
+<?php
 //タクソノミーの設定
-    add_action('init', 'create_blog_taxonomies', 0);
+    /*add_action('init', 'create_blog_taxonomies', 0);*/
+    add_action('init', 'create_post_type');
 
     //"Blog"カスタム投稿タイプに対してblogというカスタム分類を作成する
-    function create_blog_taxonomies (){
+    function create_post_type(){
+        register_post_type(
+            'blog',
+            array(
+                'label' => 'blog'
+                'public' => true,
+                'has_archive' => true,
+                'show_in_rest' => true,
+                'menu_position' => 5,
+                'supports' => array (
+                    'title',
+                    'editor',
+                    'thumbnail',
+                    'revisions'
+                ),
+            )
+        );
+    }
+    /*function create_blog_taxonomies (){
         $labels = array (
             'name' => _x('blog', 'taxonomy general name'),
             'singular_name' => _x('blog', 'taxonomy singular name'),
@@ -149,4 +168,5 @@ add_action( 'widgets_init', 'wpbeg_widgets_init' );
             'rewrite' => array('slug'=>'blog'),
         );
         register_taxonomy ('blog', 'Blog', $args);
-    }
+    }*/
+?>
