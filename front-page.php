@@ -8,7 +8,7 @@
                     </div>
                 <article class="autoplay">
                     <?php /*if(have_posts()):while(have_posts()):the_post();*/?>
-                    <?php $args=['tag'=>'product'];
+                    <?php $args=['category_name'=>'product'];
                             $custom_posts=get_posts($args);
                             foreach($custom_posts as $post): setup_postdata($post);?>
                     <div class="p-front-info1" id="js-slider">

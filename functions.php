@@ -126,7 +126,7 @@ add_action( 'widgets_init', 'wpbeg_widgets_init' );
         register_post_type(
             'blog',
             array(
-                'label' => 'blog'
+                'label' => 'blog',
                 'public' => true,
                 'has_archive' => true,
                 'show_in_rest' => true,
@@ -139,6 +139,16 @@ add_action( 'widgets_init', 'wpbeg_widgets_init' );
                 ),
             )
         );
+        register_taxonomy (
+            'blog-cat',
+            'blog',
+            array (
+                'label' => 'ブログカテゴリー',
+                'hierarchical' => true,
+                'public' => true,
+                'show_in_rest' => true,
+            )
+            );
     }
     /*function create_blog_taxonomies (){
         $labels = array (

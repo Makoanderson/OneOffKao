@@ -119,8 +119,17 @@
                     <h2><span>Blog</span></h2>
                     </div>
                 </section>
+                <?php 
+                /*$category_array=get_the_category();
+                echo'<pre>';
+                var_dump($category_array);
+                echo'</pre>';*/
+                ?>
                 <section class="p-archive">
-                    <?php if(have_posts()):while(have_posts()):the_post();?>
+                    <?php /*if(have_posts()):while(have_posts()):the_post();*/?>
+                    <?php $args=['category_name'=> 'all-info'];
+                            $custom_posts=get_posts($args);
+                            foreach($custom_posts as $post): setup_postdata($post);?>
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
                             <?php the_post_thumbnail(); ?>
@@ -170,9 +179,11 @@
                             </a>
                         </div>
                     </div>-->
-                    <?php endwhile; else:?>
+                    <?php endforeach;?>
+                    <div class="thumbs_bots"></div>
+                    <?php /*endwhile; else:?>
                         <p>記事はありません。</p>
-                    <?php endif;?>
+                    <?php endif;*/?>
                 </section>
                 <!--<div class="p-archive-page">
                     <ul class="p-archive-page-pagenation">
