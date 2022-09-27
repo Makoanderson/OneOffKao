@@ -51,9 +51,16 @@
         </script>-->
         <script>
             $('.autoplay').slick({
-                slidesToShow: 4,
+                autoplay:true,
+                slidesToShow: 3,
                 slidesToScroll: 1,
                 autoplaySpeed: 2000,
+                responsive: [{
+                    breakpoint: 768,
+                    settig: {
+                        slidesToShow: 1,
+                    }
+                }]
             });
         </script>
     </body>
