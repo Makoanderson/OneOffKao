@@ -129,6 +129,7 @@
                     <?php /*if(have_posts()):while(have_posts()):the_post();*/?>
                     <?php $args=['category_name'=> 'all-info'];
                             $custom_posts=get_posts($args);
+                            if($custom_posts):
                             foreach($custom_posts as $post): setup_postdata($post);?>
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
@@ -179,11 +180,13 @@
                             </a>
                         </div>
                     </div>-->
-                    <?php endforeach;?>
+                    <?php endforeach;else:?>
                     <div class="thumbs_bots"></div>
                     <?php /*endwhile; else:?>
                         <p>記事はありません。</p>
                     <?php endif;*/?>
+                    <?php endif;
+                            wp_reset_postdata();?>
                 </section>
                 <!--<div class="p-archive-page">
                     <ul class="p-archive-page-pagenation">
