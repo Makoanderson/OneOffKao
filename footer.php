@@ -55,6 +55,7 @@
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 autoplaySpeed: 2000,
+                pauseOnHover: false,
                 responsive: [{
                     breakpoint: 768,
                     settig: {
