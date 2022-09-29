@@ -52,12 +52,14 @@
         <script>
             $('.autoplay').slick({
                 autoplay:true,
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 autoplaySpeed: 2000,
                 pauseOnHover: false,
                 pauseOnFocus: false,
                 pauseOnDotsHover: false,
+                centerMode: true,
+                /*variableWidth: true,*/
                 responsive: [{
                     breakpoint: 768,
                     settig: {
