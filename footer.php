@@ -56,6 +56,8 @@
                 slidesToScroll: 1,
                 autoplaySpeed: 2000,
                 pauseOnHover: false,
+                pauseOnFocus: false,
+                pauseOnDotsHover: false,
                 responsive: [{
                     breakpoint: 768,
                     settig: {
