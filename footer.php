@@ -52,23 +52,43 @@
         <script>
             $('.autoplay').slick({
                 autoplay:true,
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 autoplaySpeed: 2000,
                 pauseOnHover: false,
                 pauseOnFocus: false,
                 pauseOnDotsHover: false,
                 centerMode: true,
-                centerPadding: '10%',
+                /*centerPadding: '10%',*/
+                centerPadding: "15%",
+                adaptiveHeight: true,
                 /*dots: true,*/
                 arrows: true,
                 /*variableWidth: true,*/
-                responsive: [{
-                    breakpoint: 768,
-                    settigs: {
-                        slidesToShow: 1,
+                /*responsive: [{
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
                     }
-                }]
+                }
+                {
+                    breakpoint: 600,
+                    settings:{
+                        slidesToShow:2,
+                        slidesToScroll:2,
+                        infinite: true,
+                    }
+                }
+                {
+                    breakpoint: 480,
+                    settings:{
+                        slidesToShow: 1,
+                        slidesToScroll:1,
+                        infinite: true,
+                    }
+                }]*/
             });
         </script>
     </body>
