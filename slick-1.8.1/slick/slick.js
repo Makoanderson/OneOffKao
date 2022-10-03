@@ -44,7 +44,7 @@
                 appendDots: $(element),
                 arrows: true,
                 asNavFor: null,
-                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">Previous</button>',
+                prevArrow: '<button class="slick-prev" aria-label="Previous" type="button">P</button>',
                 nextArrow: '<button class="slick-next" aria-label="Next" type="button">Next</button>',
                 autoplay: false,
                 autoplaySpeed: 3000,
@@ -191,11 +191,11 @@
     Slick.prototype.activateADA = function() {
         var _ = this;
 
-        _.$slideTrack.find('.slick-active').attr({
+        /*_.$slideTrack.find('.slick-active').attr({
             'aria-hidden': 'false'
         }).find('a, input, button, select').attr({
             'tabindex': '0'
-        });
+        });*/
 
     };
 
@@ -494,9 +494,9 @@
                 dot.append($('<li />').append(_.options.customPaging.call(this, _, i)));
             }
 
-            _.$dots = dot.appendTo(_.options.appendDots);
+            /*_.$dots = dot.appendTo(_.options.appendDots);
 
-            _.$dots.find('li').first().addClass('slick-active');
+            _.$dots.find('li').first().addClass('slick-active');*/
 
         }
 
@@ -2312,16 +2312,16 @@
                 if (index >= centerOffset && index <= (_.slideCount - 1) - centerOffset) {
                     _.$slides
                         .slice(index - centerOffset + evenCoef, index + centerOffset + 1)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
+                        /*.addClass('slick-active')
+                        .attr('aria-hidden', 'false');*/
 
                 } else {
 
                     indexOffset = _.options.slidesToShow + index;
                     allSlides
                         .slice(indexOffset - centerOffset + 1 + evenCoef, indexOffset + centerOffset + 2)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
+                        /*.addClass('slick-active')
+                        .attr('aria-hidden', 'false');*/
 
                 }
 
@@ -2351,14 +2351,14 @@
 
                 _.$slides
                     .slice(index, index + _.options.slidesToShow)
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false');
+                    /*.addClass('slick-active')
+                    .attr('aria-hidden', 'false');*/
 
             } else if (allSlides.length <= _.options.slidesToShow) {
 
                 allSlides
-                    .addClass('slick-active')
-                    .attr('aria-hidden', 'false');
+                    /*.addClass('slick-active')
+                    .attr('aria-hidden', 'false');*/
 
             } else {
 
@@ -2369,15 +2369,15 @@
 
                     allSlides
                         .slice(indexOffset - (_.options.slidesToShow - remainder), indexOffset + remainder)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
+                        /*.addClass('slick-active')
+                        .attr('aria-hidden', 'false');*/
 
                 } else {
 
                     allSlides
                         .slice(indexOffset, indexOffset + _.options.slidesToShow)
-                        .addClass('slick-active')
-                        .attr('aria-hidden', 'false');
+                        /*.addClass('slick-active')
+                        .attr('aria-hidden', 'false');*/
 
                 }
 
@@ -2959,13 +2959,13 @@
 
             _.$dots
                 .find('li')
-                    .removeClass('slick-active')
+                    /*.removeClass('slick-active')*/
                     .end();
 
             _.$dots
                 .find('li')
                 .eq(Math.floor(_.currentSlide / _.options.slidesToScroll))
-                .addClass('slick-active');
+                /*.addClass('slick-active');*/
 
         }
 

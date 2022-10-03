@@ -127,7 +127,9 @@
                 ?>
                 <section class="p-archive">
                     <?php /*if(have_posts()):while(have_posts()):the_post();*/?>
-                    <?php $args=['category_name'=> 'all-info'];
+                    <?php $args=array(
+                        'category_name'=> 'all-info',
+                        'paged'=> get_query_var('paged',1));
                             $custom_posts=get_posts($args);
                             if($custom_posts):
                             foreach($custom_posts as $post): setup_postdata($post);?>
