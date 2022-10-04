@@ -1,4 +1,4 @@
-$(function(){
+/*$(function(){
     var $jsslider = $('#js-slider');
     $jsslider.on('init', function (event, slick, currentSlide, nextSlide){
         slideItem = $('#js-slider .slick-slice')
@@ -24,5 +24,5 @@ $(function(){
         autoplay: false,
         slidesToShow: 1,
     });
-});
+});*/
 

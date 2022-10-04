@@ -52,7 +52,7 @@
         <script>
             $('.autoplay').slick({
                 autoplay:true,
-                slidesToShow: 4,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 autoplaySpeed: 2000,
                 pauseOnHover: false,
@@ -65,17 +65,17 @@
                 /*dots: true,*/
                 arrows: true,
                 /*variableWidth: true,*/
-                /*responsive: [{
-                    breakpoint: 1024,
+                responsive: [{
+                    breakpoint: 480,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                         infinite: true,
                     }
                 }
-                {
+                /*{
                     breakpoint: 600,
-                    settings:{
+                    settings: {
                         slidesToShow:2,
                         slidesToScroll:2,
                         infinite: true,
@@ -88,7 +88,7 @@
                         slidesToScroll:1,
                         infinite: true,
                     }
-                }]*/
+                }*/]
             });
         </script>
     </body>
