@@ -153,7 +153,7 @@
                 </div>
                 <?php endwhile; ?>
             <?php endif; ?>
-                <?php $args=['tag'=>'pictures'];
+                <?php $args=['category_name'=>'pictures'];
                     $custom_posts=get_posts($args);
                     foreach($custom_posts as $post):setup_postdata($post);?>
                 <div class="c-title-about-bot">

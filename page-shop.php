@@ -117,7 +117,7 @@
                     <img class="c-title-shop__img2" src="../img/GerberaPNG/g03.png">-->
                     <h2><span>Shop一覧</span></h2>
                 </div>
-                <?php $args=['tag'=>'info-all-store'];
+                <?php $args=['category_name'=>'info-all-store'];
                 $custom_posts=get_posts($args);
                 foreach($custom_posts as $post):setup_postdata($post);?>
                 <div class="p-shop-infoboxtitle">
@@ -128,7 +128,7 @@
                 </div>
                 <?php endforeach;?>
                 <div class="thumbs_bots"></div>
-                <?php $args=['tag'=>'shop-info'];
+                <?php $args=['category_name'=>'shop-info'];
                 $custom_posts=get_posts($args);
                 foreach($custom_posts as $post):setup_postdata($post);?>
                 <div class="p-shop">
