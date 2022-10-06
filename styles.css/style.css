@@ -1902,6 +1902,26 @@ button {
     left: 400px;*/
   }
 }
+.p-blog-side .wp-block-tag-cloud {
+  list-style-image: url("./../img/GerberaPNG/g06list.png");
+  /*list-style-position: inside;*/
+  /*width: 16px;
+  height: 16px;*/
+  line-height: 24px;
+  /*background-color: darkgreen;*/
+}
+@media screen and (min-width: 960px) {
+  .p-blog-side .wp-block-tag-cloud {
+    list-style: "－";
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 960px) {
+  .p-blog-side .wp-block-tag-cloud {
+    /*position: absolute;
+    top: 1350px;
+    left: 400px;*/
+  }
+}
 
 .p-front-info {
   margin: 55px 0;

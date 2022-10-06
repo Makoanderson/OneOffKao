@@ -1,10 +1,13 @@
 <aside class="l-sidebar p-blog-side">
     <div class="l-sidebar-menu">
                     <?php
+                        /*wp_tag_cloud('format=list');*/
                         if ( is_active_sidebar( 'category_widget' ) ) :
-                            dynamic_sidebar( 'category_widget' );
+                            /*dynamic_sidebar( 'category_widget' );*/
+                            wp_tag_cloud('format=list');
                         else:
                     ?>
+                    <?php /*wp_tag_cloud('format=list');*/?>
                         <!--<div class="p-blog-side__title">
                             <img src="../img/GerberaPNG/g02.png">
                             <img src="../img/GerberaPNG/g03.png">
