@@ -1711,7 +1711,7 @@ button {
   margin-left: 10%;
 }
 .p-blog-side {
-  /*margin: 50px auto;*/
+  margin-top: 50px;
   display: flex;
   /*background-color: blue;*/
 }
