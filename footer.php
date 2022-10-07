@@ -62,9 +62,9 @@
                 /*centerPadding: '10%',*/
                 centerPadding: "15%",
                 adaptiveHeight: true,
-                /*dots: true,*/
+                dots: false,
                 arrows: true,
-                /*variableWidth: true,*/
+                variableWidth: false,
                 responsive: [{
                     breakpoint: 480,
                     settings: {
