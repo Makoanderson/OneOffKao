@@ -76,9 +76,10 @@
         margin-bottom: 25px;
         /*background-color: blueviolet;*/
         @media screen and (min-width: 960px) {
-            margin-left: -15%;
+            /*margin-left: -15%;*/
             background-color: c.$lightbrown;
             width: 170%;
+            margin-top: 25px;
         }
         @media screen and (min-width: 768px) and (max-width: 960px) {
            /* top: 1650px;*/
@@ -151,7 +152,7 @@
             color: c.$darkbrown;
             span {
                 display: inline-block;
-                margin: 10px;
+                /*margin: -15%;*/
                 background-color: rgba(251,242,247,0.6);
                 position: relative;
                 z-index: 160;
