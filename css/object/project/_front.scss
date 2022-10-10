@@ -19,7 +19,7 @@
         @media screen and (min-width: 768px) {
             margin: 100px 75px 100px 75px;
         }
-    &-info1 .slick-slide {
+    &-info1 /*.slick-slide*/ {
         height: 400px;
         overflow: hidden;
         img {
@@ -52,10 +52,10 @@
                 margin-top: 12px;
             }
         }
-        .thumbs_bots {
+        /*.thumbs_bots {
             margin: 10px 0 0;
-        }
-        .thumbs_list li {
+        }*/
+        /*.thumbs_list li {
             display: inline-block;
             width: 150px;
             height: 80px;
@@ -65,7 +65,7 @@
         }
         .thumbs_list li.slick-active {
             opacity: 1;
-        }
+        }*/
         .desc {
             margin: 10px;
             @media screen and (min-width: 768px) {
@@ -190,4 +190,17 @@
     @media screen and (min-width: 768px) {
         display: block;
     }
+}
+
+.autoplay {
+    width: 94%;
+    margin: 0 auto;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.autoplay .slick-slider {
+    margin: 0 10px;
 }

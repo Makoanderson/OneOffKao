@@ -36,7 +36,7 @@
                         </div>-->
                     </div>
                     <?php endforeach;?>
-                    <div class="thumbs_bots"></div>
+                    <!--<div class="thumbs_bots"></div>-->
                         <?php /*endwhile; else:?>
                             <p>記事はありません。</p>
                         <?php endif;*/?>
