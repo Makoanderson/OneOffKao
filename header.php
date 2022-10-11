@@ -4,6 +4,7 @@
         <mate charset="<?php bloginfo( 'charset' );?>">
             <!-- <title>One-Off KAO</title> -->
             <meta name="description" content="<?php bloginfo( 'description' ); ?>">
+            <meta name="keywords" content="革,花,生花,アクセサリー,プレゼント"/>
     <!-- CSS -->
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
