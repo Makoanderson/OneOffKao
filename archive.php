@@ -182,6 +182,7 @@
                             </a>
                         </div>
                     </div>-->
+                    <?php wp_link_pages();?>
                     <?php endforeach;else:?>
                     <div class="thumbs_bots"></div>
                     <?php /*endwhile; else:?>

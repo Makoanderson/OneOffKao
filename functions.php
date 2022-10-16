@@ -1,4 +1,5 @@
 <?php function OneOffKao_theme_setup() {
+    add_theme_support('automatic-feed-links');
     add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'OneOffKao_theme_setup' );
@@ -16,7 +17,7 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
 ?>
 
 <?php 
-    register_nav_menu( $location, $description );
+    /*register_nav_menu( $location, $description );*/
 
     function twpp_setup_theme() {
         register_nav_menus( array(
@@ -73,6 +74,7 @@ if (! function_exists('fa_custom_setup_kit') ) {
   }
 }
 fa_custom_setup_kit('https://kit.fontawesome.com/1ff6e5547b.js');
+/*wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '6.1.1' );*/
 ?>
 
 <?php 
@@ -180,3 +182,4 @@ add_action( 'widgets_init', 'wpbeg_widgets_init' );
         register_taxonomy ('blog', 'Blog', $args);
     }*/
 ?>
+<?php /*add_theme_support( ‘automatic-feed-links’ );*/ ?>
