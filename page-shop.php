@@ -134,7 +134,6 @@
                 <div class="p-shop">
                     <div class="p-shop-img">
                         <?php the_post_thumbnail();?>
-                        <!--<img src="<?/*php echo esc_url( get_template_directory_uri() );*/?>/img/tulip.jpg">-->
                     </div>
                     <div class="p-shop-text">
                         <h3>
@@ -149,7 +148,6 @@
                 </div>
                 <!--<div class="p-shop">
                     <div class="p-shop-img">
-                        <img src="<?/*php echo esc_url( get_template_directory_uri() );*/?>/img/tulip.jpg">
                     </div>
                     <div class="p-shop-text">
                         <a href="#">
@@ -160,7 +158,6 @@
                 </div>
                 <div class="p-shop">
                     <div class="p-shop-img">
-                        <img src="<?/*php echo esc_url( get_template_directory_uri() );*/?>/img/tulip.jpg">
                     </div>
                     <div class="p-shop-text">
                         <a href="#">
