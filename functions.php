@@ -75,6 +75,14 @@ if (! function_exists('fa_custom_setup_kit') ) {
 }
 fa_custom_setup_kit('https://kit.fontawesome.com/1ff6e5547b.js');
 /*wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v6.1.1/css/all.css', array(), '6.1.1' );*/
+/*wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri() . '/font-awesome/css/all.min.css', array());
+add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
+function theme_enqueue_styles() {
+ wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
+ wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
+ wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri() . '/font-awesome/css/all.min.css', array());
+}*/
+
 ?>
 
 <?php 
@@ -121,10 +129,10 @@ add_action( 'widgets_init', 'wpbeg_widgets_init' );
 <?php
 //タクソノミーの設定
     /*add_action('init', 'create_blog_taxonomies', 0);*/
-    add_action('init', 'create_post_type');
+    /*add_action('init', 'create_post_type');*/
 
     //"Blog"カスタム投稿タイプに対してblogというカスタム分類を作成する
-    function create_post_type(){
+    /*function create_post_type(){
         register_post_type(
             'blog',
             array(
@@ -151,6 +159,6 @@ add_action( 'widgets_init', 'wpbeg_widgets_init' );
                 'show_in_rest' => true,
             )
             );
-    }
+    }*/
 ?>
 <?php /*add_theme_support( ‘automatic-feed-links’ );*/ ?>
