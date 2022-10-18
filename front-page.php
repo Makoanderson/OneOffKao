@@ -13,7 +13,7 @@
                             foreach($custom_posts as $post): setup_postdata($post);?>
                     <div class="p-front-info1" id="js-slider">
                         <div class="image">
-                            <?php the_post_thumbnail(); ?>
+                            <?php the_post_thumbnail('large'); ?>
                         </div>
                         <div class="desc">
                             <h3>
@@ -49,7 +49,7 @@
                         <h2><span>About</span></h2>
                     </div>
                     <div class="p-front-about-info">
-                        <p>One-Off KAO(ワンオフ・カオ)は、<br>革で作られた生花のような<br>アクセサリーを作っているお店です。<br>全てハンドメイドで、<br>大きな一枚革から<br>世界で一つだけの花のアクセサリーへ<br>ひとつずつ切り染めて<br>【美しい色合いと立体感】のあるお花を<br>あなたのもとへ。</p>
+                        <p>One-Off KAO(ワンオフ・カオ)は、<br>革のお花のアクセサリーのお店です。<br>全てハンドメイドで、<br>大きな一枚革からはさみで<br>ひとつずつ切り染めてお花に仕立てています。<br>【美しい色合いと立体感】のある形が特徴です。</p>
                         <a href="<?php echo esc_url(home_url('/about/'));?>">Read more→</a>
                         <img class="p-front-about__img" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog2.jpg">
                     </div>    
@@ -76,7 +76,7 @@
                     <?php /*$args=array('posts_per_page'=>3);*/?>
                     <article class="p-front-blog1">
                         <div class="p-front-blog1__title">
-                            <?php the_post_thumbnail(); ?>
+                            <?php the_post_thumbnail('large'); ?>
                             <!--<img src="/img/blog1.jpg">
                             <p class="blog-title"><a href="#">テキストテキストテキスト</a></p>-->
                         </div>

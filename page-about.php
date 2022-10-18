@@ -79,7 +79,7 @@
                 </div>
                 <div class="c-title-about-img">
                     <!--<img src="/img/Header.jpg">-->
-                    <?php the_post_thumbnail(); ?>
+                    <?php the_post_thumbnail('large'); ?>
                 </div>
                 <section class="wp-about">
                 <div class="p-about">

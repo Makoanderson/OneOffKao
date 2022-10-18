@@ -133,7 +133,7 @@
                 foreach($custom_posts as $post):setup_postdata($post);?>
                 <div class="p-shop">
                     <div class="p-shop-img">
-                        <?php the_post_thumbnail();?>
+                        <?php the_post_thumbnail('large');?>
                     </div>
                     <div class="p-shop-text">
                         <h3>

@@ -92,7 +92,7 @@
         }
         &__img {
             width: 270.01px;
-            height: 193.5px;
+            height: 270px;
             display: block;
             margin: 25px auto 35px;
             text-align: center;
@@ -109,7 +109,7 @@
             line-height: 35px;
             /*margin: 25px auto 0;*/
             @media screen and (min-width: 768px) {
-                margin: 130px auto 0;
+                margin: 130px 0 0 auto;
             }
         }
         a {

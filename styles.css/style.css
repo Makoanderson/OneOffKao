@@ -417,6 +417,9 @@ button {
     font-size: 24px;
   }
 }
+.c-Footer p {
+  text-align: center;
+}
 
 /*.c-Footer img {
     height: 54px;
@@ -2121,7 +2124,7 @@ button {
 }
 .p-front-about__img {
   width: 270.01px;
-  height: 193.5px;
+  height: 270px;
   display: block;
   margin: 25px auto 35px;
   text-align: center;
@@ -2142,7 +2145,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .p-front-about p {
-    margin: 130px auto 0;
+    margin: 130px 0 0 auto;
   }
 }
 .p-front-about a {

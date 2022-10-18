@@ -126,7 +126,7 @@
                         <p class="p-blog-cat">カテゴリー:<?php the_category("/");?><!--お店の紹介--></p>
                     </header>
                     <div class="p-blog-mv">
-                        <?php the_post_thumbnail(); ?>
+                        <?php the_post_thumbnail('large'); ?>
                         <?php the_content();?>
                         <?php the_tags();?>
                         <!--<img src="/img/sakura-series.jpg" alt="新作商品">

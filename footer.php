@@ -34,6 +34,7 @@
                     'theme_location' => 'footer-navigation',
                 );
                 wp_nav_menu( $footerNav ); ?>
+                <p><small class="copyright">Copyright © 2022  <?php bloginfo( 'name' );?> All Rights Reserved. </small></p>
             </footer>
         </div>
         <?php wp_footer(); ?>

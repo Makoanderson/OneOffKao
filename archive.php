@@ -135,7 +135,7 @@
                             foreach($custom_posts as $post): setup_postdata($post);?>
                     <div class="p-archive-main">
                         <div class="p-archive-main-img">
-                            <?php the_post_thumbnail(); ?>
+                            <?php the_post_thumbnail('large'); ?>
                             <!--<img src="/img/tulip.jpg">-->
                         </div>
                         <div class="p-archive-main-text">
