@@ -17,7 +17,6 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
 ?>
 
 <?php 
-    /*register_nav_menu( $location, $description );*/
 
     function twpp_setup_theme() {
         register_nav_menus( array(
@@ -28,17 +27,13 @@ add_action( 'wp_enqueue_scripts', 'OneOffKao_enqueue_scripts');
         ) );
     }
     add_action( 'after_setup_theme', 'twpp_setup_theme' );
-    /*wp_nav_menu( $headerNav );*/
 
     
-    /*wp_nav_menu( $footerNav );*/
 
     function OneOffKao_title( $title){
         if(is_front_page()&&is_home()){
             $title=get_bloginfo('name', 'dispaly');
-        }/*elseif(is_singular()){
-            $title=single_post_title(",false");
-        }*/
+        }
         return $title;
         }
         add_filter('pre_get_document_title', 'OneOffKao_title');
@@ -74,14 +69,7 @@ if (! function_exists('fa_custom_setup_kit') ) {
   }
 }
 fa_custom_setup_kit('https://kit.fontawesome.com/1ff6e5547b.js');
-/*wp_enqueue_style( 'font-awesome', '//use.fontawesome.com/releases/v6.1.1/css/all.css', array(), '6.1.1' );*/
-/*wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri() . '/font-awesome/css/all.min.css', array());
-add_action( 'wp_enqueue_scripts', 'theme_enqueue_styles' );
-function theme_enqueue_styles() {
- wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
- wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array('parent-style'));
- wp_enqueue_style( 'font-awesome', get_stylesheet_directory_uri() . '/font-awesome/css/all.min.css', array());
-}*/
+
 
 ?>
 
@@ -112,53 +100,3 @@ function wpbeg_widgets_init() {
 }
 add_action( 'widgets_init', 'wpbeg_widgets_init' );
 ?>
-
-<?php 
-    /*add_action('pre_get_posts', 'my_pre_get_posts');
-    function my_pre_get_posts( $query) {
-        if($query->is_admi()|| !$query->is_main_query()) {
-            return;
-        }
-        if ( $query->is_home()){
-            $query->set('posts_per_page', 3);
-            return;
-        }
-    }
-*/?>
-
-<?php
-//タクソノミーの設定
-    /*add_action('init', 'create_blog_taxonomies', 0);*/
-    /*add_action('init', 'create_post_type');*/
-
-    //"Blog"カスタム投稿タイプに対してblogというカスタム分類を作成する
-    /*function create_post_type(){
-        register_post_type(
-            'blog',
-            array(
-                'label' => 'blog',
-                'public' => true,
-                'has_archive' => true,
-                'show_in_rest' => true,
-                'menu_position' => 5,
-                'supports' => array (
-                    'title',
-                    'editor',
-                    'thumbnail',
-                    'revisions'
-                ),
-            )
-        );
-        register_taxonomy (
-            'blog-cat',
-            'blog',
-            array (
-                'label' => 'ブログカテゴリー',
-                'hierarchical' => true,
-                'public' => true,
-                'show_in_rest' => true,
-            )
-            );
-    }*/
-?>
-<?php /*add_theme_support( ‘automatic-feed-links’ );*/ ?>

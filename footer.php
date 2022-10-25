@@ -11,23 +11,6 @@
                     </div>
                     </section>
                 <nav class="l-Foot__nav c-Footer__nav">
-                    <!--<ul class="c-Footer__nav__menu">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="archive.html">Blog</a>
-                        </li>
-                        <li>
-                            <a href="shop.html">Shop</a>
-                        </li>
-                        <li>
-                            <a href="inquiry.html">Contact</a>
-                        </li>
-                    </ul>-->
                 </nav>
                 <?php
                 $footerNav = array (
@@ -38,18 +21,9 @@
             </footer>
         </div>
         <?php wp_footer(); ?>
-        <!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script type="text/javascript" src="<?php echo esc_url(get_template_directory_uri());?>/slick-1.8.1/slick/slick.min.js"></script>
         <script src="<?php echo esc_url(get_template_directory_uri());?>/OneOffKao.js"></script>
-        <!--<script>   
-        $(document).ready(function(){
-                $('.autoplay').slick({
-                    setting-name: setting-value
-                });
-            });
-        </script>-->
         <script>
             $('.autoplay').slick({
                 autoplay:true,
@@ -60,7 +34,6 @@
                 pauseOnFocus: false,
                 pauseOnDotsHover: false,
                 centerMode: true,
-                /*centerPadding: '10%',*/
                 centerPadding: "15%",
                 adaptiveHeight: true,
                 dots: false,
@@ -74,22 +47,7 @@
                         infinite: true,
                     }
                 }
-                /*{
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow:2,
-                        slidesToScroll:2,
-                        infinite: true,
-                    }
-                }
-                {
-                    breakpoint: 480,
-                    settings:{
-                        slidesToShow: 1,
-                        slidesToScroll:1,
-                        infinite: true,
-                    }
-                }*/]
+                ]
             });
         </script>
     </body>

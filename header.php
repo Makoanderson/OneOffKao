@@ -9,9 +9,6 @@
         <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">-->
-        <!--<link rel="stylesheet" href="/css/style.css/style.css">-->
-        <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">-->
         <?php wp_head(); ?>
     </head>
     <body <?php body_class(); ?>>
@@ -26,47 +23,6 @@
                 <article class="c-Nav">
                     <div class="l-f-Header__link">
                         <nav class="c-Nav-f">
-                        <!--<nav class="c-Nav__body">
-                            <ul id="menu-global-navi" class="c-Nav__body__menu">
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="page-about.php">About</a>
-                                </li>
-                                <li>
-                                    <a href="archive.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="shop.html">Shop</a>
-                                </li>
-                                <li>
-                                    <a href="inquiry.html">Contact</a>
-                                </li>
-                            </ul>
-                            <ul id="sp-menu-global-navi" class="c-Nav__body__spmenu">
-                                <li>
-                                    <a href="index.html"><i class="fa-solid fa-house"></i><br>
-                                    <span class="iconname">Home</span></a>
-                                </li>
-                                <li>
-                                    <a href="about.html"><i class="fa-solid fa-circle-info"></i><br>
-                                    <span class="iconname">About</span></a>
-                                </li>
-                                <li>
-                                    <a href="archive.html"><i class="fa-solid fa-pen-to-square"></i><br>
-                                    <span class="iconname">Blog</span></a>
-                                </li>
-                                <li>
-                                    <a href="shop.html"><i class="fa-solid fa-cart-shopping"></i><br>
-                                    <span class="iconname">Shop</span></a>
-                                </li>
-                                <li>
-                                    <a href="inquiry.html"><i class="fa-solid fa-envelope"></i><br>
-                                    <span class="iconname">Contact</span></a>
-                                </li>
-                            </ul>
-                        </nav>-->
                         </nav>
                     </div>
                     <?php 

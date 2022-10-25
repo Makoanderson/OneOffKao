@@ -1,70 +1,3 @@
-<!--<!DOCTYPE html>
-<html lang="ja">
-    <head>
-        <mate charset="utf-8">
-            <title>One-Off KAO - contact</title>
-        CSS
-        <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Philosopher">
-        <link rel="stylesheet" href="../css/styles.css/style.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-    </head>
-    <body>
-        <div class="l-wrapper">
-            <header class="l-Header">
-                <div class="l-Header__title">
-                    <img src="../img/One-Off logo black[708].png">
-                </div>
-                <div class="l-Header__link">
-                    <div class="c-Nav">
-                        <nav class="c-Nav__body">
-                            <ul id="menu-global-navi" class="c-Nav__body__menu">
-                                <li>
-                                    <a href="index.html">Home</a>
-                                </li>
-                                <li>
-                                    <a href="about.html">About</a>
-                                </li>
-                                <li>
-                                    <a href="archive.html">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="shop.html">Shop</a>
-                                </li>
-                                <li>
-                                    <a href="inquiry.html">Contact</a>
-                                </li>
-                            </ul>
-                            <ul id="sp-menu-global-navi" class="c-Nav__body__spmenu">
-                                <li>
-                                    <a href="index.html"><i class="fa-solid fa-house"></i><br>
-                                    <span class="iconname">Home</span></a>
-                                </li>
-                                <li>
-                                    <a href="about.html"><i class="fa-solid fa-circle-info"></i><br>
-                                    <span class="iconname">About</span></a>
-                                </li>
-                                <li>
-                                    <a href="archive.html"><i class="fa-solid fa-pen-to-square"></i><br>
-                                    <span class="iconname">Blog</span></a>
-                                </li>
-                                <li>
-                                    <a href="#"><i class="fa-solid fa-cart-shopping"></i><br>
-                                    <span class="iconname">Shop</span></a>
-                                </li>
-                                <li>
-                                    <a href="inquiry.html"><i class="fa-solid fa-envelope"></i><br>
-                                    <span class="iconname">Contact</span></a>
-                                </li>
-                            </ul>
-                        </nav>
-                        <div class="c-Nav__icon">
-                            <i class="fa-brands fa-facebook-square"></i>
-                            <i class="fa-brands fa-instagram"></i>
-                        </div>
-                    </div>
-                </div>
-            </header>-->
             <?php get_header('other');?>
             <main class="l-Main c-title p-inquiry">
             <?php if( have_posts()):
@@ -73,69 +6,15 @@
                     ?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <div class="c-title-inquiry">
-                    <!--<img class="c-title-inquiry__img1" src="../img/GerberaPNG/g02.png">
-                    <img class="c-title-inquiry__img2" src="../img/GerberaPNG/g03.png">-->
                     <h2><span>お問い合わせ</span></h2>
                 </div>
                 <div class="p-inquiry-mv">
                     <p class="inquiry-image"><img class="inquiry-img" src="<?php echo esc_url( get_template_directory_uri() );?>/img/blog2.jpg"></p>
                     <p class="inquiry-toi">お気軽にお問い合わせください。</p>
                 </div>
-                <!--<form action="#" class="p-inquiry-form">
-                    <div>
-                        <lable for="name">お名前</lable>
-                        <input type="text" id="name" name="your-name">
-                    </div>
-                    <div>
-                        <lable for="email">メールアドレス</lable>
-                        <input type="text" id="email" name="your-email">
-                    </div>
-                    <div>
-                        <lable for="phone">電話番号</lable>
-                        <input type="text" id="phone" name="your-phone">
-                    </div>
-                    <div>
-                        <lable for="message">お問い合わせ内容</lable>
-                        <textarea id="message" name="your-message"></textarea>
-                    </div>
-                    <input type="submit" class="button" value="送信">
-                </form>-->
                 <?php echo apply_shortcodes( '[contact-form-7 id="84" title="コンタクトフォーム 1"]' ); ?>
                 </article>
                 <?php endwhile; ?>
             <?php endif; ?>
             </main>
             <?php get_footer();?>
-            <!--<footer class="l-Foot c-Footer">
-                <div class="l-Foot__logo">
-                    <div class="c-Footer__logo">
-                        <img src="../img/One-Off logo black[708].png">
-                    </div>
-                </div>
-                <div class="c-Footer__icon">
-                    <i class="fa-brands fa-facebook-square"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                </div>
-                <div class="l-Foot__nav">
-                    <ul class="c-Footer__nav__menu">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="archive.html">Blog</a>
-                        </li>
-                        <li>
-                            <a href="shop.html">Shop</a>
-                        </li>
-                        <li>
-                            <a href="inquiry.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
-    </body>
-</html>-->

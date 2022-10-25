@@ -2,8 +2,6 @@
             <main class="l-Main p-front c-title">
                 <article class="p-front-info">
                     <section class="c-title-info">
-                        <!--<img class="c-title-info__img1" src="../img/GerberaPNG/g02.png">
-                        <img class="c-title-info__img2" src="../img/GerberaPNG/g03.png"> -->
                         <h2><span>ページが見つかりません。</span></h2>
                     </section>
                     <section class="p-front-error">
