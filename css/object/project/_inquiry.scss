@@ -9,15 +9,10 @@
             margin: auto 0;
             display: flex;
         }
-        /*p {
-            display: flex;
-        }
-        display: flex;*/
         .inquiry-img {
             width: 335px;
             height: 300px;
             margin: 40px auto;
-            /*text-align: center;*/
             @media screen and (min-width: 768px) {
                 width: 400px;
                 height: 400px;
@@ -46,7 +41,6 @@
                     right: 0;
                     z-index: -1;
                     position: absolute;
-                    /*border-radius: 6px;*/
                 }
             }
         }
@@ -59,7 +53,6 @@
             }
             @media screen and (min-width: 960px) {
                 margin-bottom: 255px;
-                /*margin-left: 10px;*/
                 margin-top: 255px;
                 position: relative;
                 top: 0;
@@ -75,17 +68,10 @@
                     left: -100px;
                     z-index: -3;
                     position: absolute;
-                    /*border-radius: 6px;*/
                     }
                     
                 }
-        }
-        /*.inquiry-toi::before {
-            background-color: aqua;
-            height: 90px;
-            width: 1160px;
-            margin: 0 0 0 auto;
-        }*/
+            }
         }
     &-form {
         width: 60%;
@@ -123,7 +109,6 @@
             text-align: center;
             vertical-align: middle;
             margin: 0 10px 90px 0;
-            /*padding: 6px 25px;*/
             width: 44px;
             height: 26px;
             color: c.$darkbrown;
@@ -157,7 +142,6 @@
         font: 16px/24px sans-serif;
             box-sizing: border-box;
             width: 80%;
-            /*height: 127px;*/
             margin: 8px 0;
             padding: 0.3em;
             border: 1px solid c.$darkbrown;
@@ -173,7 +157,6 @@
         text-align: center;
         vertical-align: middle;
         margin: 0 10px 90px 0;
-        /*padding: 6px 25px;*/
         width: 44px;
         height: 26px;
         color: c.$darkbrown;

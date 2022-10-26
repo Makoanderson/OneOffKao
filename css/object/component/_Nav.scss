@@ -79,7 +79,6 @@
     height: 126px;
     @media screen and (min-width: 768px) {
         background-color: c.$lightbrown;
-        /*margin-top: 150px;*/
     }
     &__iconf {
         color: c.$darkbrown;
@@ -146,25 +145,15 @@
     
 }
 .menu-headermenu-container {
-    /*background-color: c.$lightbrown;*/
-    /*width: 100%;*/
     @media screen and (min-width: 768px) {
         width: 300%;
         display: flex;
-        /*margin-top: 150px;*/
         height: 126px;
         background-color: c.$lightbrown;
     }
-    /* .menu {
-        width: 100%;
-        @media screen and (min-width: 768px) {
-            width: 100%;
-        }*/
         ul {
             list-style: none;
             width: 100%;
-            /*display: flex;
-            flex-wrap: wrap;*/
         }
         .menu {
             color: c.$darkbrown;
@@ -177,7 +166,6 @@
                 display: flex;
                 font-size: 24px;
                 padding:45px 0;
-                /*border-left: 1px solid c.$midbronw;*/
             }
             @media screen and (min-width: 768px) and (max-width: 1110px) {
                 display: block;
@@ -187,7 +175,6 @@
             }
             li {
                 border-left: 1px solid c.$midbronw;
-                /*margin: 45px 0;*/
                 a {
                     margin: 0 40px;
                     text-align: center;
@@ -199,11 +186,6 @@
                 }
             }
         }
-        
-        /*ul li {
-            width: 78px;
-            height: 46px;
-        }*/
     }
     .menu-spheader-container {
         width: 100%;
@@ -228,14 +210,12 @@
                 flex-wrap: wrap;
                 justify-content: center;
                 background-color: c.$lightbrown;
-                /*padding: 2.5px;*/
                 margin: 2.5px;
                 a {
                     display: block;
                     justify-content: center;
                     align-items: center;
                     text-align: center;
-                    /*flex-wrap: wrap;*/
                 }
             }
             @media screen and (min-width:768px) {
@@ -244,22 +224,12 @@
         }
         }
         .menu-headernavi-container {
-            /*background-color: c.$lightbrown;*/
-            /*width: 100%;*/
             @media screen and (min-width: 768px) {
                 width: 300%;
-                /*display: flex;*/
             }
-            /* .menu {
-                width: 100%;
-                @media screen and (min-width: 768px) {
-                    width: 100%;
-                }*/
                 ul {
                     list-style: none;
                     width: 100%;
-                    /*display: flex;
-                    flex-wrap: wrap;*/
                 }
                 .menu {
                     color: c.$darkbrown;
@@ -272,7 +242,6 @@
                         display: flex;
                         font-size: 24px;
                         padding:55px 0;
-                        /*border-left: 1px solid c.$midbronw;*/
                     }
                     @media screen and (min-width: 768px) and (max-width: 1110px) {
                         display: block;
@@ -282,7 +251,6 @@
                     }
                     li {
                         border-left: 1px solid c.$midbronw;
-                        /*margin: 45px 0;*/
                         a {
                             margin: 0 40px;
                             text-align: center;
@@ -294,11 +262,6 @@
                         }
                     }
                 }
-                
-                /*ul li {
-                    width: 78px;
-                    height: 46px;
-                }*/
             }
 
 #menu-item-46 ::before {

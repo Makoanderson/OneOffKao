@@ -8,11 +8,9 @@
     background-color: c.$lightbrown;
     padding: 20px 0;
     &__logo {
-        /*position: absolute;*/
         width: 100%;
         margin: 0 auto 20px;
         text-align: center;
-        /*height: 20px;*/
         @media screen and (min-width:768px) {
             width: 100%;
             margin: 80px auto 65px;
@@ -28,10 +26,8 @@
         }
     }
     &__icon {
-        /*position: absolute;*/
         width: 100%;
         margin: 0 auto;
-        /*justify-content: center;*/
         text-align: center;
         @media screen and (min-width:768px) {
             width: 100%;
@@ -48,11 +44,9 @@
         }
     }
     &__nav {
-        /*position: relative;*/
         width: 200px;
         height: 60px;
         margin: 25px auto;
-        /*background-color: aqua;*/
         @media screen and (min-width: 768px) {
             width: 60%;
         }
@@ -70,35 +64,24 @@
             margin: auto;
             width: 200px;
             height: 60px;
-            /*display: flex;
-            justify-content: center;
-            flex-wrap: wrap;*/
         @media screen and (min-width:768px) {
             width: 60%;
             top: 440px;
-            /*width: 200px;*/
             margin: 25px auto;
-            /*margin: 0 auto;*/
         }
         .menu {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            /*height: 60px;*/
-            /*width: 80px;*/
             @media screen and (min-width: 375px) {
                 display: flex;
-                /*flex-wrap: warp;*/
-                /*justify-content: center;*/
             }
             li {
-            /*display: flex;*/
             padding: 0;
             margin: 6px 0;
             list-style: none;
             border-left: 1px solid c.$midbronw;
             justify-content: center;
-            /*flex-wrap: wrap;*/
             align-items: center;
             text-align: center;
             width:calc(100%/3);
@@ -119,13 +102,4 @@
     }    
 }
 
-/*.c-Footer img {
-    height: 54px;
-    width: 80px;
-}
-
-.c-Footer i {
-    height: 16px;
-    width: 16px;
-}*/
 

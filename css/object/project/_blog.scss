@@ -2,7 +2,6 @@
 @use '../../foundation/font' as f;
 
 .p-blog {
-    /*background-color: #f00;*/
     @media screen and (min-width: 960px) {
         width: 50%;
     }
@@ -10,7 +9,6 @@
         margin: auto;
         justify-content: center;
         text-align: center;
-        /*background-color: aqua;*/
         img {
             width: 315px;
             height: 220px;
@@ -18,7 +16,6 @@
             @media screen and (min-width: 768px) {
                 width: 600px;
                 height: 500px;
-                /*margin: 100px 300px 100px 100px;*/
                 margin: 90px auto;
                 @media screen and (min-width: 768px) and (max-width: 960px) {
                     margin: 90px;
@@ -29,14 +26,10 @@
             width: 330px;
             height: 170px;
             overflow-wrap: break-word;
-            /*margin-left: 20px;
-            margin-right: 20px;*/
             margin: 25px auto;
             @media screen and (min-width: 768px) {
                 width: 600px;
                 height: 250px;
-                /*margin-left: 100px;*/
-                /*margin-right: 360px;*/
                 @media screen and (min-width: 768px) and (max-width: 960px) {
                     /*margin-left: 90px;*/
                 }
@@ -47,45 +40,28 @@
         }
     }
     &-info {
-        /*margin: auto;
-        justify-content: center;
-        text-align: center;*/
-        /*background-color: antiquewhite;*/
         p {
             margin-left: 10%;
         }
-    }
-    &-date {
-        // ...
-    }
-    &-cat {
-        // ...
     }
 }
 
 .p-blog-side {
     margin-top: 50px;
     display: flex;
-    /*background-color: blue;*/
     @media screen and (min-width: 960px) {
         margin-top: 360px;
         display: block;
     }
     #block-9, #block-8 {
-        /*position: relative;*/
         margin-bottom: 25px;
-        /*background-color: blueviolet;*/
         @media screen and (min-width: 960px) {
-            /*margin-left: -15%;*/
             background-color: c.$lightbrown;
             width: 170%;
             margin-top: 25px;
         }
         @media screen and (min-width: 768px) and (max-width: 960px) {
-           /* top: 1650px;*/
             width: 150px;
-            /*left: -510px;
-            margin-left: 0;*/
         }
         h2 {
             position: relative;
@@ -136,14 +112,9 @@
         }
     }
     &__title {
-        /*margin-left: -15%;*/
         margin-bottom: 25px;
-        /*background-color: crimson;*/
         @media screen and (min-width: 768px) and (max-width: 960px) {
-            /*position: relative;
-            top: 1650px;*/
             width: 200px;
-            /*left: -300px;*/
             margin-left: 0;
         }
         h3 {
@@ -152,7 +123,6 @@
             color: c.$darkbrown;
             span {
                 display: inline-block;
-                /*margin: -15%;*/
                 background-color: rgba(251,242,247,0.6);
                 position: relative;
                 z-index: 160;
@@ -202,7 +172,6 @@
     &__archivemenu {
         list-style-image: url("./../img/GerberaPNG/g06list.png");
         line-height: 24px;
-        /*background-color: chartreuse;*/
         @media screen and (min-width: 960px) {
             list-style: "－";
         }
@@ -213,14 +182,9 @@
         }
     }
     &__archivetitle {
-        /*margin-left: -15%;*/
         margin-bottom: 25px;
-        /*background-color: crimson;*/
         @media screen and (min-width: 768px) and (max-width: 960px) {
-            /*position: relative;
-            top: 1650px;*/
             width: 200px;
-            /*left: -300px;*/
             margin-left: 0;
         }
         h3 {
@@ -278,11 +242,7 @@
     }
     .wp-block-archives-list {
         list-style-image: url("./../img/GerberaPNG/g06list.png");
-        /*list-style-position: inside;*/
-        /*width: 16px;
-        height: 16px;*/
         line-height: 24px;
-        /*background-color: darkgreen;*/
         @media screen and (min-width: 960px) {
             list-style: "－";
         }
@@ -294,11 +254,7 @@
     }
     .wp-block-tag-cloud {
         list-style-image: url("./../img/GerberaPNG/g06list.png");
-        /*list-style-position: inside;*/
-        /*width: 16px;
-        height: 16px;*/
         line-height: 24px;
-        /*background-color: darkgreen;*/
         @media screen and (min-width: 960px) {
             list-style: "－";
         }
@@ -311,12 +267,8 @@
     .wp-tag-cloud {
         list-style-image: url("./../img/GerberaPNG/g06list.png");
         line-height: 24px;
-        /*background-color: chartreuse;*/
         @media screen and (min-width: 960px) {
             list-style: "－";
         }
-        /*a {
-            font-size: 1em;
-        }*/
     }
 }
