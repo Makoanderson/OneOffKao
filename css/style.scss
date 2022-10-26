@@ -17,10 +17,7 @@
 
 // object------------------------------------------------------------------------
 /* component */
-/*@forward '../css/object/component';*/
 @use './object/component/Footer';
-
-/*@forward './object/component/index';*/
 @use './object/component/Nav';
 @use './object/component/title';
 
